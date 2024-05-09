@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coleção de Mangás da Larissa</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="static/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="main-titulo">Coleção de Mangás da Larissa</h1>
+
+        <div class="div-style">
+            <h3 class="sub-titulos">Resumo da coleção</h3>
+            <table class="table table-resumo">
+                <thead>
+                    <tr>
+                        <th scope="col">Título do Mangá</th>
+                        <th scope="col">Volumes Totais da Coleção</th>
+                        <th scope="col">Andamento da Coleção</th>
+                        <th scope="col">Tipo de Edição</th>
+                        <th scope="col">Autor</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    {% for col in title_data %}
+                    <tr>
+                        <td>{{col.titulo}}</td>
+                        <td>{{col.volumes}}</td>
+                        <td>{{ (((vol_data|selectattr('status', 'equalto', 'OK')|list|count) / col.volumes) * 100)|round(2) }}%</td>
+                        <td>{{col.vol_type}}</td>
+                        <td>{{col.author}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <br>
+            <br>
+            <br>
+
+
+
+
+
+
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Nova Coleção
+            </button>
+
+            <div class="modal fade" id="exampleModal">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="sub-titulos">Adicionar nova coleção</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-style" action="" method="post">
+                                <div class="form-group">
+                                    <label for="volumes">Volumes</label>
+                                    <input type="number" class="form-control" name="volume" placeholder="Volumes">
+                                </div>
+                                <div class="form-group">
+                                    <label for="titulo">Título</label>
+                                    <input type="text" class="form-control" name="titulo" placeholder="Título">
+                                </div>
+                                <div class="form-group">
+                                    <label for="autor">Autor</label>
+                                    <input type="text" class="form-control" name="author" placeholder="Autor">
+                                </div>
+                                <div class="form-group">
+                                    <label for="status">Status</label>
+                                    <select class="form-control" name="status">
+                                        <option>Comprado</option>
+                                        <option>Faltando</option>
+                                        <option>OK</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tipo">Tipo</label>
+                                    <select class="form-control" id="tipo">
+                                        <option>Regular</option>
+                                        <option>Edição Especial</option>
+                                        <option>Volume Único</option>
+                                    </select>
+                                </div>
+                                <br><br>
+                                <button type="submit" >Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="div-style">
+            <h3 class="sub-titulos">Volumes</h3>
+            <table class="table table-hover table-sm table-resumo" id="table-vol">
+                <thead>
+                    <tr>
+                        <th scope="col">Volume</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for entry in vol_data %}
+                    <tr>
+                        <td>{{ entry.volume }}</td>
+                        <td>{{ entry.titulo }}</td>
+                        <td>{{ entry.author }}</td>
+                        <td>{{ entry.status }}</td>
+                        <td>
+                            <a class="update-btn" href="">Atualizar</a>
+                            <a class="delete-btn" href="">Deletar</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <div class="div-pag" id="pag">
+                <div class="pag-btn-group">
+                    <button id="back">Anterior</button>
+                    <span id="pagina"></span>
+                    <button id="next">Próximo</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        const lines = 20;
+        let current = 1;
+
+        const table = document.getElementById('table-vol');
+        const pag = document.getElementById('pag');
+        const back = document.getElementById('back');
+        const next = document.getElementById('next');
+        const pageSpan = document.getElementById('pagina');
+
+        function loadData() {
+            const linhas = table.rows;
+            const allLines = linhas.length - 1;
+            const totalPages = Math.ceil(allLines / lines);
+
+            // Esconde todas as linhas
+            for (let i = 1; i < linhas.length; i++) {
+                linhas[i].style.display = 'none';
+            }
+
+            const ini = (current - 1) * lines + 1;
+            let end = ini + lines - 1;
+            if (end > allLines) {
+                end = allLines;
+            }
+
+            for (let i = ini; i <= end; i++) {
+                linhas[i].style.display = '';
+            }
+
+            pageSpan.innerText = `Página ${current} de ${totalPages}`;
+        }
+
+        function goToPage(pagina) {
+            current = pagina;
+            loadData();
+        }
+
+        back.addEventListener('click', () => {
+            if (current > 1) {
+                goToPage(current - 1);
+            }
+        });
+
+        next.addEventListener('click', () => {
+            const allLines = table.rows.length - 1;
+            const totalPages = Math.ceil(allLines / lines);
+
+            if (current < totalPages) {
+                goToPage(current + 1);
+            }
+        });
+
+        loadData();
+    </script>
+</body>
+
+</html>
