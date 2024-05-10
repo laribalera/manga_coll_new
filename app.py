@@ -39,7 +39,6 @@ def index():
 
     result = list(collection_titles.aggregate(pipeline))
 
-    # Exibindo o resultado
     for item in result:
         print(item['_id'], item['volumes_ok'])
 
