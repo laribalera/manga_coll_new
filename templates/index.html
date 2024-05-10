@@ -38,7 +38,13 @@
                     <tr>
                         <td>{{col.titulo}}</td>
                         <td>{{col.volumes}}</td>
-                        <td>{{ (((vol_data|selectattr('status', 'equalto', 'OK')|list|count) / col.volumes) * 100)|round(2) }}%</td>
+                        <td>
+                            {% for item in result %}
+                                {% if item._id == col.titulo %}
+                                    {{ item.volumes_ok }} / {{col.volumes}}
+                                {% endif %}
+                            {% endfor %}
+                        </td>
                         <td>{{col.vol_type}}</td>
                         <td>{{col.author}}</td>
                     </tr>

@@ -11,7 +11,41 @@ collection_volumes = db['all_volumes']
 def index():
     title_data = list(collection_titles.find({}, {'_id': 0}))
     vol_data = list(collection_volumes.find({}, {'_id': 0}))
-    return render_template('index.html', title_data=title_data, vol_data=vol_data)
+
+    pipeline = [
+        {
+            "$lookup": {
+                "from": "all_volumes",
+                "localField": "titulo",
+                "foreignField": "titulo",
+                "as": "col"
+            }
+        },
+        {
+            "$unwind": "$col"
+        },
+        {
+            "$match": {
+                "col.status": {"$in": ["OK", "COMPRADO"]}
+            }
+        },
+        {
+            "$group": {
+                "_id": "$titulo",
+                "volumes_ok": {"$sum": 1}
+            }
+        }
+    ]
+
+    result = list(collection_titles.aggregate(pipeline))
+
+    for item in result:
+        print(item['_id'], item['volumes_ok'])
+
+    if not result:
+        return "0"
+
+    return render_template('index.html', title_data=title_data, vol_data=vol_data, result=result)
 
 
 
