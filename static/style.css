@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Honk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Honk&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 body {
     background-color: rgba(173, 109, 247, 0.7);
 }
 
 .main-titulo {
-    color: white;
+    color: #8931b5;
     font-weight: bold; /* Corrigido */
     text-align: center;
-    padding: 5%;
-    font-family: 'Honk';
-    font-size: 80px;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
 }
 
 .sub-titulos{
@@ -19,14 +18,45 @@ body {
     text-align: center;
     font-family: 'Bebas Neue';
     font-style: unset;
+    margin-bottom: 3%;
+}
+
+.nav-style {
+    background-color: #8931b5;
+    border-radius: 5px;
+    margin: 1% 1%;
+}
+
+.nav-style a{
+    color: #fff;
+    font-family: 'Lato';
+    font-style: unset;
+    font-weight: bold;
+    
+}
+
+.nav-style a:hover{
+    color: #8931b5;
+    background-color: #fff;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-style: unset;   
+}
+
+.nav-style a:active{
+    color: #8931b5;
+    background-color: #fff;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-style: unset;
+    
 }
 
 .div-style {
     background-color: white;
     padding: 4% 5%;
-    border-radius: 20px;
-    margin: 3% 1%;
-    box-shadow: 15px 5px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    margin: 5% 0 0 0;
 }
 
 .table-resumo{
@@ -97,3 +127,22 @@ body {
     font-weight: bold;
     border-radius: 5px;
     border: 1px solid transparent;}
+
+.btn-details{
+    background-color: rgba(173, 109, 247, 0.7);;
+    padding: 5% 10%;
+    margin-right: 7%;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3%;
+}
+
+.btn-details:hover{
+    background-color: #8931b5;
+    padding: 5% 10%;
+    margin-right: 7%;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3%;
+    transition: 9ms;
+}

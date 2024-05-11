@@ -45,7 +45,7 @@ def index():
     if not result:
         return "0"
 
-    return render_template('index.html', title_data=title_data, vol_data=vol_data, result=result)
+    return render_template('new_index.html', title_data=title_data, vol_data=vol_data, result=result)
 
 
 
