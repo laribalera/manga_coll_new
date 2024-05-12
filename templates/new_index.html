@@ -39,8 +39,8 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Título do Mangá</th>
-                        <th scope="col">Volumes Totais da Coleção</th>
-                        <th scope="col">Andamento da Coleção</th>
+                        <th scope="col">Volumes Totais</th>
+                        <th scope="col">Andamento</th>
                         <th scope="col">Tipo de Edição</th>
                         <th scope="col">Autor</th>
                         <th scope="col"></th>
@@ -50,7 +50,7 @@
                     {% for col in title_data %}
                     <tr>
                         <td>
-                            <a class="btn-details" href="#">Detalhes</a>
+                            <a class="btn-details" data-bs-toggle="modal" data-bs-target="#detailsModal" data_titulo="{{col.titulo}}" href="#">Detalhes</a>
                         </td>
                         <td>{{col.titulo}}</td>
                         <td>{{col.volumes}}</td>
@@ -71,16 +71,39 @@
             <br>
             <br>
             <br>
-
-
-
-
+            <input type="hidden" id="titulo_manga" name="titulo_manga" value="">
+            
+                            
 
 
 
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Nova Coleção
             </button>
+
+            <div class="modal fade" id="detailsModal">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Detalhes do Mangá</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="mangaDetalhes">
+                                <img id="mangaImagem">
+                                <strong>Image ID:</strong> <span id="image_id"></span><br>
+                                <strong>Autor:</strong> <span id="autor"></span><br>
+                                <strong>Descrição:</strong> <span id="descricao"></span><br>
+                                <strong>Lançamento:</strong> <span id="lancamento"></span><br>
+                                <strong>Título:</strong> <span id="titulo"></span><br>
+                                <strong>Gênero:</strong> <span id="genero"></span><br>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="modal fade" id="exampleModal">
                 <div class="modal-dialog modal-lg">
@@ -130,59 +153,39 @@
       </div>
 
       <script>
-        const lines = 20;
-        let current = 1;
+            document.addEventListener('DOMContentLoaded', function() {
+        const mangaDet = JSON.parse({{ manga_det | tojson |safe }});
 
-        const table = document.getElementById('table-vol');
-        const pag = document.getElementById('pag');
-        const back = document.getElementById('back');
-        const next = document.getElementById('next');
-        const pageSpan = document.getElementById('pagina');
-
-        function loadData() {
-            const linhas = table.rows;
-            const allLines = linhas.length - 1;
-            const totalPages = Math.ceil(allLines / lines);
-
-            // Esconde todas as linhas
-            for (let i = 1; i < linhas.length; i++) {
-                linhas[i].style.display = 'none';
+        function findMangaByTitulo(titulo) {
+            for (let manga of mangaDet) {
+                if (manga.titulo === titulo) {
+                    return manga;
+                }
             }
-
-            const ini = (current - 1) * lines + 1;
-            let end = ini + lines - 1;
-            if (end > allLines) {
-                end = allLines;
-            }
-
-            for (let i = ini; i <= end; i++) {
-                linhas[i].style.display = '';
-            }
-
-            pageSpan.innerText = `Página ${current} de ${totalPages}`;
+            return {};
         }
 
-        function goToPage(pagina) {
-            current = pagina;
-            loadData();
-        }
+        const btnDetails = document.querySelectorAll('.btn-details');
 
-        back.addEventListener('click', () => {
-            if (current > 1) {
-                goToPage(current - 1);
-            }
+        btnDetails.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const titulo = this.getAttribute('data_titulo');
+                console.log('Título do Mangá:', titulo);
+
+                document.getElementById('titulo_manga').value = titulo;
+
+                const manga = findMangaByTitulo(titulo);
+                document.getElementById('titulo').innerText = manga.titulo;
+                document.getElementById('autor').innerText = manga.autor;
+                document.getElementById('descricao').innerText = manga.descricao;
+                document.getElementById('lancamento').innerText = manga.lancamento;
+                document.getElementById('genero').innerText = manga.genero;
+                document.getElementById('mangaImagem').src = '/imagem/' + manga.imagem_id;
+                
+
+            });
         });
-
-        next.addEventListener('click', () => {
-            const allLines = table.rows.length - 1;
-            const totalPages = Math.ceil(allLines / lines);
-
-            if (current < totalPages) {
-                goToPage(current + 1);
-            }
-        });
-
-        loadData();
+    });
     </script>
 </body>
 
