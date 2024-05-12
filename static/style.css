@@ -65,8 +65,7 @@ body {
 }
 
 .table-resumo thead{
-    font-family: 'Bebas Neue';
-    font-size: 20px;
+    font-family: 'Lato';
 }
 
 .update-btn{
@@ -130,7 +129,7 @@ body {
 
 .btn-details{
     background-color: rgba(173, 109, 247, 0.7);;
-    padding: 5% 10%;
+    padding: 7% 10%;
     margin-right: 7%;
     color: #fff;
     text-decoration: none;
@@ -139,7 +138,7 @@ body {
 
 .btn-details:hover{
     background-color: #8931b5;
-    padding: 5% 10%;
+    padding: 7% 10%;
     margin-right: 7%;
     color: #fff;
     text-decoration: none;
