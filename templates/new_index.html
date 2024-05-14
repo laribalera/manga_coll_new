@@ -20,14 +20,14 @@
         <div class="container-fluid">
           <span class="navbar-brand mb-0 main-titulo">Mangá Manager</span>
         </div>
-      </nav>
+    </nav>
 
       <ul class="nav justify-content-center nav-style">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="new_index.html">Home</a>
+          <a class="nav-link" aria-current="page" href="{{ url_for('index') }}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Volumes</a>
+          <a class="nav-link" href="{{ url_for('volumes_page') }}">Volumes</a>
         </li>
       </ul>
 
@@ -68,13 +68,7 @@
                 </tbody>
             </table>
 
-            <br>
-            <br>
-            <br>
             <input type="hidden" id="titulo_manga" name="titulo_manga" value="">
-            
-                            
-
 
 
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -101,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div><!--fim modal details-->
 
             <div class="modal fade" id="exampleModal">
                 <div class="modal-dialog modal-lg">
@@ -145,10 +139,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div><!--fim modal cadastro-->
+        </div><!--fim div-style-->
 
-      </div>
+      </div><!--fim container-->
 
       <script>
             document.addEventListener('DOMContentLoaded', function() {
