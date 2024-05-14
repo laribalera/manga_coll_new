@@ -59,5 +59,12 @@ def index():
     
     return render_template('new_index.html', title_data=title_data, vol_data=vol_data, result=result, manga_det=json.dumps(serialized_manga_det))
 
+@app.route('/volumes_page')
+def volumes_page():
+    vol_data = list(collection_volumes.find({}))
+
+    return render_template('volumes_page.html', vol_data=vol_data)
+    
+
 if __name__ == '__main__':
     app.run(debug=True)
