@@ -6,7 +6,7 @@ body {
 
 .main-titulo {
     color: #8931b5;
-    font-weight: bold; /* Corrigido */
+    font-weight: bold; 
     text-align: center;
     font-family: 'Bebas Neue';
     font-size: 40px;
@@ -14,11 +14,19 @@ body {
 
 .sub-titulos{
     color: #8931b5;
-    font-weight: bold; /* Corrigido */
+    font-weight: bold; 
     text-align: center;
     font-family: 'Bebas Neue';
     font-style: unset;
-    margin-bottom: 3%;
+    margin-bottom: 1%;
+}
+
+.sub-sub-titulos{
+    color: #8931b5;
+    font-weight: bold; 
+    text-align: center;
+    font-family: 'Lato';
+    font-style: unset;
 }
 
 .nav-style {
@@ -144,4 +152,14 @@ body {
     text-decoration: none;
     border-radius: 3%;
     transition: 9ms;
+}
+
+.img-attr{
+    width: 40%;
+    margin-bottom: 3%;
+}
+
+.text-des{
+    text-align: justify;
+    margin: 2%;
 }
