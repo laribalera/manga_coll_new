@@ -29,13 +29,17 @@ Este repositório contém uma aplicação em construção para gerenciamento de 
 ## Atualizações
 
 - [x] Upload de nova versão do app com integração com MongoDB
+- [x] Front end: Melhorar o visual da página
+- [x] Modal de descrição da coleção
+- [x] Novo visual index
 
 ## 🛠️ TO-DO
 
-- [ ] Front end: Melhorar o visual da página
+- [ ] Front end: Criar página de Volumes
 - [ ] Front end: Fazer pagina de update bonita ou trocar para modal
 - [ ] Front end: Criar novo formulario para alimentar tabela de resumo + tabela de volumes
-- [ ] Arrumar o andamento da coleção (%) e adicionar append na tabela de resumo
+- [ ] Arrumar o andamento da coleção para aparecer zerado caso não hajam correspondencias
+- [ ] Fazer CRUD para a Home e Volumes 
   
 ## Autores
 

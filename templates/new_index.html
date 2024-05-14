@@ -85,21 +85,19 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title">Detalhes do Mangá</h4>
+                            <h4 class="sub-sub-titulos">Detalhes do Mangá</h4>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div id="mangaDetalhes">
-                                <img id="mangaImagem">
-                                <strong>Image ID:</strong> <span id="image_id"></span><br>
-                                <strong>Autor:</strong> <span id="autor"></span><br>
-                                <strong>Descrição:</strong> <span id="descricao"></span><br>
-                                <strong>Lançamento:</strong> <span id="lancamento"></span><br>
-                                <strong>Título:</strong> <span id="titulo"></span><br>
-                                <strong>Gênero:</strong> <span id="genero"></span><br>
+                                <h1 class="display-6 text-center sub-titulos" id="titulo"></h1>
+                                <h6 id="autor" class="sub-sub-titulos lead"></h6><br>
+                                <img id="mangaImagem"  class="img-attr mx-auto d-block img-thumbnail" alt="...">
+                                <h6 class="sub-sub-titulos">Descrição</h6> 
+                                <p class='text-des' id="descricao"></p>
+                                <h6 class="sub-sub-titulos">Lançamento</h6> <p class="text-center" id="lancamento"></p>
+                                <h6 class="sub-sub-titulos">Gênero</h6> <p class="text-center" id="genero"></p><br>
                             </div>
-                        </div>
-                        <div class="modal-footer">
                         </div>
                     </div>
                 </div>
@@ -180,7 +178,7 @@
                 document.getElementById('descricao').innerText = manga.descricao;
                 document.getElementById('lancamento').innerText = manga.lancamento;
                 document.getElementById('genero').innerText = manga.genero;
-                document.getElementById('mangaImagem').src = '/imagem/' + manga.imagem_id;
+                document.getElementById('mangaImagem').src = '/static/img/' + manga.filename;
                 
 
             });
