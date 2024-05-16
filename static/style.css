@@ -18,7 +18,7 @@ body {
     text-align: center;
     font-family: 'Bebas Neue';
     font-style: unset;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
 }
 
 .sub-sub-titulos{
@@ -77,7 +77,7 @@ body {
 }
 
 .update-btn{
-    color:rgba(47, 76, 245, 0.7);
+    color:#8931b5;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
@@ -87,7 +87,7 @@ body {
 }
 
 .delete-btn{
-    color: rgba(245, 47, 47, 0.7);
+    color: rgba(126, 24, 87, 0.7);
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
@@ -132,6 +132,18 @@ body {
     font-weight: bold;
     border-radius: 5px;
     border: 1px solid transparent;}
+
+.btn-all{
+    background-color: rgb(112, 41, 194);;
+    color: #fff;
+    border-radius: 4%;
+}
+
+.btn-all:hover{
+    background-color: rgb(112, 41, 194);;
+    color: #fff;
+    border-radius: 4%;
+}
 
 .btn-details{
     background-color: rgba(173, 109, 247, 0.7);;

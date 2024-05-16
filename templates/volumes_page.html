@@ -14,6 +14,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link href="static/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <nav class="navbar bg-body-tertiary">
@@ -34,7 +35,55 @@
       <div class="container">
         <div class="div-style">
             <h3 class="sub-titulos">Volumes</h3>
-            <table class="table table-hover table-sm table-resumo" id="table-vol">
+
+            <div class="mt-5">
+                <div class="row">
+                <div class="col">
+                    <form class="row mb-3 ">
+                    <div class="col-9">
+                        <input type="text" class="form-control mb-3" id="pesquisarManga" name="pesquisar" placeholder="Pesquisar Mangá">
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn btn-all mb-3">Pesquisar</button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-all mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiltros" aria-expanded="false" aria-controls="collapseFiltros">
+                        Mostrar Filtro
+                        </button>
+                    </div>
+                    </form>
+                </div>
+                </div>
+            
+                <div class="row">
+                <div class="col">
+                    <div class="collapse" id="collapseFiltros">
+                    <div class="card card-body">
+                        <form>
+                        <div class="mb-3">
+                            <label for="autor" class="form-label">Autor:</label>
+                            <select class="form-select mb-2" id="autor" name="autor">
+                            <option value="autor1">Autor 1</option>
+                            <option value="autor2">Autor 2</option>
+                            <option value="autor3">Autor 3</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="status" class="form-label">Status:</label>
+                            <select class="form-select mb-2" id="status" name="status">
+                            <option value="ok-status">OK</option>
+                            <option value="comprado-status">COMPRADO</option>
+                            <option value="faltando-status">FALTANDO</option>
+                            </select>
+                        </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <table class="table table-hover table-sm table-resumo mt-5" id="table-vol">
                 <thead>
                     <tr>
                         <th scope="col">Volume</th>
@@ -53,8 +102,8 @@
                         <td>{{ entry.author }}</td>
                         <td>{{ entry.status }}</td>
                         <td>
-                            <a class="update-btn" href="">Atualizar</a>
-                            <a class="delete-btn" href="">Deletar</a>
+                            <a class="update-btn" href=""><span class="material-symbols-outlined">edit</span></a>
+                            <a class="delete-btn" href=""><span class="material-symbols-outlined">delete</span></a>
                         </td>
                     </tr>
                     {% endfor %}

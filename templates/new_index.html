@@ -34,7 +34,55 @@
       <div class="container">
         <div class="div-style">
             <h3 class="sub-titulos">Coleções</h3>
-            <table class="table table-resumo">
+
+            
+        <div class="mt-5">
+            <div class="row">
+            <div class="col">
+                <form class="row mb-3 ">
+                <div class="col-9">
+                    <input type="text" class="form-control mb-3" id="pesquisarManga" name="pesquisar" placeholder="Pesquisar Mangá">
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-all mb-3">Pesquisar</button>
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-all mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiltros" aria-expanded="false" aria-controls="collapseFiltros">
+                    Mostrar Filtro
+                    </button>
+                </div>
+                </form>
+            </div>
+            </div>
+        
+            <div class="row">
+            <div class="col">
+                <div class="collapse" id="collapseFiltros">
+                <div class="card card-body">
+                    <form>
+                    <div class="mb-3">
+                        <label for="autor" class="form-label">Autor:</label>
+                        <select class="form-select mb-2" id="autor" name="autor">
+                        <option value="autor1">Autor 1</option>
+                        <option value="autor2">Autor 2</option>
+                        <option value="autor3">Autor 3</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="status" class="form-label">Tipo de Edição:</label>
+                        <select class="form-select mb-2" id="status" name="status">
+                        <option value="regular">Regular</option>
+                        <option value="specialEdition">Special Edition</option>
+                        </select>
+                    </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+            <table class="table table-resumo mt-5">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
@@ -71,7 +119,7 @@
             <input type="hidden" id="titulo_manga" name="titulo_manga" value="">
 
 
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-all" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Nova Coleção
             </button>
 
@@ -104,38 +152,56 @@
                             <h4 class="sub-titulos">Adicionar nova coleção</h4>
                         </div>
                         <div class="modal-body">
-                            <form class="form-style" action="" method="post">
+                            <form action="/create_collection" method="post" enctype="multipart/form-data">
                                 <div class="form-group">
-                                    <label for="volumes">Volumes</label>
-                                    <input type="number" class="form-control" name="volume" placeholder="Volumes">
+                                  <label for="volumes">Volumes:</label>
+                                  <input type="number" class="form-control" id="volumes">
                                 </div>
                                 <div class="form-group">
-                                    <label for="titulo">Título</label>
-                                    <input type="text" class="form-control" name="titulo" placeholder="Título">
+                                  <label for="titulo">Título:</label>
+                                  <input type="text" class="form-control" id="titulo" name="titulo">
                                 </div>
                                 <div class="form-group">
-                                    <label for="autor">Autor</label>
-                                    <input type="text" class="form-control" name="author" placeholder="Autor">
+                                  <label for="autor">Autor:</label>
+                                  <input type="text" class="form-control" id="autor">
                                 </div>
                                 <div class="form-group">
-                                    <label for="status">Status</label>
-                                    <select class="form-control" name="status">
-                                        <option>Comprado</option>
-                                        <option>Faltando</option>
-                                        <option>OK</option>
-                                    </select>
+                                  <label for="status">Status:</label>
+                                  <select class="form-control" id="status">
+                                    <option>Comprado</option>
+                                    <option>Faltando</option>
+                                    <option>OK</option>
+                                  </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="tipo">Tipo</label>
-                                    <select class="form-control" id="tipo">
-                                        <option>Regular</option>
-                                        <option>Edição Especial</option>
-                                        <option>Volume Único</option>
-                                    </select>
+                                  <label for="tipo">Tipo:</label>
+                                  <select class="form-control" id="tipo">
+                                    <option>Regular</option>
+                                    <option>Edição Especial</option>
+                                    <option>Volume único</option>
+                                  </select>
                                 </div>
-                                <br><br>
-                                <button type="submit" >Enviar</button>
-                            </form>
+                                <div class="form-group">
+                                  <label for="descricao">Descrição:</label>
+                                  <textarea class="form-control" id="descricao" rows="3"></textarea>
+                                </div>
+                                <div class="form-group">
+                                  <label for="lançamento">Lançamento:</label>
+                                  <input type="text" class="form-control" id="lançamento">
+                                </div>
+                                <div class="form-group">
+                                  <label for="genero">Gênero:</label>
+                                  <input type="text" class="form-control" id="genero">
+                                </div>
+                                <div class="form-group mt-5">
+                                  <label for="capa">Capa:</label>
+                                  <input type="file" class="form-control" id="capa">
+                                </div>
+                                <div class="d-grid gap-2 col-6 mx-auto">
+                                    <button type="submit" class="btn btn-all mt-5">Enviar</button>
+                                  </div>
+                              </form>
+                              
                         </div>
                     </div>
                 </div>

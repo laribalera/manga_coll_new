@@ -64,7 +64,15 @@ def volumes_page():
     vol_data = list(collection_volumes.find({}))
 
     return render_template('volumes_page.html', vol_data=vol_data)
-    
+
+@app.route('/create_collection', methods=['POST'])
+
+def create_collection():
+#criar request
+
+
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
