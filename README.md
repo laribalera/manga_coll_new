@@ -13,6 +13,7 @@ Este repositório contém uma aplicação em construção para gerenciamento de 
 
 - Flask
 - pymongo
+
   
 ## 🖥️ Instalação
 
@@ -24,7 +25,50 @@ Este repositório contém uma aplicação em construção para gerenciamento de 
 
 ## 🖥️ Uso
 
-- Utiliza dados de um database com duas collections: `all_titles` e `all_volumes` com as colunas volume,titulo,author,status. 
+- Utiliza dados de um database com três collections:
+  
+- `all_titles`
+```
+{
+    "_id": {
+    "$oid": ObjectID
+    },
+    "titulo": String,
+    "volumes": int32,
+    "vol_type": String,
+    "author": String
+}
+```
+
+- `all_volumes`
+```
+{
+    "_id": {
+      "$oid": ObjectID
+    },
+    "volume": int32,
+    "titulo": String,
+    "author": String,
+    "status": String
+  }
+```
+- `manga_details`.
+```
+{
+   "_id": {
+     "$oid": ObjectID
+    },
+   "filename": String,
+   "image_id": {
+       "$oid": ObjectID
+    },
+    "autor": String,
+    "descricao": String,
+    "lancamento": String,
+    "titulo": String,
+    "genero": String
+}
+``` 
 
 ## Atualizações
 
@@ -34,14 +78,19 @@ Este repositório contém uma aplicação em construção para gerenciamento de 
 - [x] Novo visual index
 - [x] Fazer upload de infos do form de nova coleção na tabela e retorna-las
 - [X] Arrumar o andamento da coleção para aparecer zerado caso não hajam correspondencias
+- [X] Front end: Criar novo formulario para alimentar tabela de resumo + tabela de volumes
+- [X] Front end: Criar página de Volumes
 
 ## 🛠️ TO-DO
 
-- [ ] Front end: Criar página de Volumes
 - [ ] Front end: Fazer pagina de update bonita ou trocar para modal
-- [ ] Front end: Criar novo formulario para alimentar tabela de resumo + tabela de volumes
 - [ ] Criar Update e delete para as coleções e volumes
 - [ ] Criar upload de sheets para preencher as infos
+- [ ] Criar filtragem pela caixa de pesquisa
+- [ ] Adicionar paginação na aba Volumes
+- [ ] Criar aba de estatisticas das coleções? (ainda pensando sobre)
+
+
 ## Autores
 
 - @baleralarissa
