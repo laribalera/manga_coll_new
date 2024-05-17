@@ -32,6 +32,7 @@ Este repositório contém uma aplicação em construção para gerenciamento de 
 - [x] Front end: Melhorar o visual da página
 - [x] Modal de descrição da coleção
 - [x] Novo visual index
+- [x] Fazer upload de infos do form de nova coleção na tabela e retorna-las
 
 ## 🛠️ TO-DO
 
@@ -39,7 +40,7 @@ Este repositório contém uma aplicação em construção para gerenciamento de 
 - [ ] Front end: Fazer pagina de update bonita ou trocar para modal
 - [ ] Front end: Criar novo formulario para alimentar tabela de resumo + tabela de volumes
 - [ ] Arrumar o andamento da coleção para aparecer zerado caso não hajam correspondencias
-- [ ] Fazer CRUD para a Home e Volumes 
+- [ ] Criar Update e delete para as coleções e volumes
 - [ ] Criar upload de sheets para preencher as infos
 ## Autores
 
