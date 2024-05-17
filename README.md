@@ -40,7 +40,7 @@ Este repositório contém uma aplicação em construção para gerenciamento de 
 - [ ] Front end: Criar novo formulario para alimentar tabela de resumo + tabela de volumes
 - [ ] Arrumar o andamento da coleção para aparecer zerado caso não hajam correspondencias
 - [ ] Fazer CRUD para a Home e Volumes 
-  
+- [ ] Criar upload de sheets para preencher as infos
 ## Autores
 
 - @baleralarissa

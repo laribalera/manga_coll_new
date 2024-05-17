@@ -152,7 +152,7 @@
                             <h4 class="sub-titulos">Adicionar nova coleção</h4>
                         </div>
                         <div class="modal-body">
-                            <form action="/insert_infos" method="post" enctype="multipart/form-data">
+                            <form action="/upload" method="post" enctype="multipart/form-data">
                                 <div class="form-group">
                                   <label for="volumes">Volumes:</label>
                                   <input type="number" class="form-control" id="volumes" name="volumes">
@@ -191,11 +191,11 @@
                                 </div>
                                 <div class="form-group">
                                   <label for="genero">Gênero:</label>
-                                  <input type="text" class="form-control" id="genero">
+                                  <input type="text" class="form-control" id="genero" name="genero">
                                 </div>
                                 <div class="form-group mt-5">
-                                  <label for="capa">Capa:</label>
-                                  <input type="file" class="form-control" id="capa" name="capa">
+                                  <label for="photo">Capa:</label>
+                                  <input type="file" class="form-control" id="photo" name="photo">
                                 </div>
                                 <div class="d-grid gap-2 col-6 mx-auto">
                                     <button type="submit" class="btn btn-all mt-5">Enviar</button>
