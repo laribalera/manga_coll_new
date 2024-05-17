@@ -42,29 +42,36 @@ def index():
 
     # recuperando infos para a div coleções
     pipeline = [
-        {
-            "$lookup": {
-                "from": "all_volumes",
-                "localField": "titulo",
-
-                "foreignField": "titulo",
-                "as": "col"
-            }
-        },
-        {
-            "$unwind": "$col"
-        },
-        {
-            "$match": {
-                "col.status": {"$in": ["OK", "COMPRADO"]}
-            }
-        },
-        {
-            "$group": {
-                "_id": "$titulo",
-                "volumes_ok": {"$sum": 1}
+    {
+        "$lookup": {
+            "from": "all_volumes",
+            "localField": "titulo",
+            "foreignField": "titulo",
+            "as": "col"
+        }
+    },
+    {
+        "$unwind": "$col"
+    },
+    {
+        "$match": {
+            "col.status": {"$in": ["OK", "COMPRADO", "FALTANDO"]}
+        }
+    },
+    {
+        "$group": {
+            "_id": "$titulo",
+            "volumes_ok": {
+                "$sum": {
+                    "$cond": {
+                        "if": {"$ne": ["$col.status", "FALTANDO"]},
+                        "then": 1,
+                        "else": 0
+                    }
+                }
             }
         }
+    }
     ]
 
     result = list(collection_titles.aggregate(pipeline))

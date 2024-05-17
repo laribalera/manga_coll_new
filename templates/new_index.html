@@ -15,72 +15,76 @@
         crossorigin="anonymous"></script>
     <link href="static/style.css" rel="stylesheet">
 </head>
+
 <body>
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 main-titulo">Mangá Manager</span>
+            <span class="navbar-brand mb-0 main-titulo">Mangá Manager</span>
         </div>
     </nav>
 
-      <ul class="nav justify-content-center nav-style">
+    <ul class="nav justify-content-center nav-style">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="{{ url_for('index') }}">Home</a>
+            <a class="nav-link" aria-current="page" href="{{ url_for('index') }}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('volumes_page') }}">Volumes</a>
+            <a class="nav-link" href="{{ url_for('volumes_page') }}">Volumes</a>
         </li>
-      </ul>
+    </ul>
 
-      <div class="container">
+    <div class="container">
         <div class="div-style">
             <h3 class="sub-titulos">Coleções</h3>
 
-            
-        <div class="mt-5">
-            <div class="row">
-            <div class="col">
-                <form class="row mb-3 ">
-                <div class="col-9">
-                    <input type="text" class="form-control mb-3" id="pesquisarManga" name="pesquisar" placeholder="Pesquisar Mangá">
-                </div>
-                <div class="col">
-                    <button type="submit" class="btn btn-all mb-3">Pesquisar</button>
-                </div>
-                <div class="col-auto">
-                    <button class="btn btn-all mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiltros" aria-expanded="false" aria-controls="collapseFiltros">
-                    Mostrar Filtro
-                    </button>
-                </div>
-                </form>
-            </div>
-            </div>
-        
-            <div class="row">
-            <div class="col">
-                <div class="collapse" id="collapseFiltros">
-                <div class="card card-body">
-                    <form>
-                    <div class="mb-3">
-                        <label for="autor" class="form-label">Autor:</label>
-                        <select class="form-select mb-2" id="autor" name="autor">
-                        <option value="autor1">Autor 1</option>
-                        <option value="autor2">Autor 2</option>
-                        <option value="autor3">Autor 3</option>
-                        </select>
+
+            <div class="mt-5">
+                <div class="row">
+                    <div class="col">
+                        <form class="row mb-3 ">
+                            <div class="col-9">
+                                <input type="text" class="form-control mb-3" id="pesquisarManga" name="pesquisar"
+                                    placeholder="Pesquisar Mangá">
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-all mb-3">Pesquisar</button>
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn btn-all mb-3" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFiltros" aria-expanded="false"
+                                    aria-controls="collapseFiltros">
+                                    Mostrar Filtro
+                                </button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="mb-3">
-                        <label for="status" class="form-label">Tipo de Edição:</label>
-                        <select class="form-select mb-2" id="status" name="status">
-                        <option value="regular">Regular</option>
-                        <option value="specialEdition">Special Edition</option>
-                        </select>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="collapse" id="collapseFiltros">
+                            <div class="card card-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="autor" class="form-label">Autor:</label>
+                                        <select class="form-select mb-2" id="autor" name="autor">
+                                            <option value="autor1">Autor 1</option>
+                                            <option value="autor2">Autor 2</option>
+                                            <option value="autor3">Autor 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="status" class="form-label">Tipo de Edição:</label>
+                                        <select class="form-select mb-2" id="status" name="status">
+                                            <option value="regular">Regular</option>
+                                            <option value="specialEdition">Special Edition</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    </form>
-                </div>
                 </div>
             </div>
-            </div>
-        </div>
 
             <table class="table table-resumo mt-5">
                 <thead>
@@ -98,15 +102,16 @@
                     {% for col in title_data %}
                     <tr>
                         <td>
-                            <a class="btn-details" data-bs-toggle="modal" data-bs-target="#detailsModal" data_titulo="{{col.titulo}}" href="#">Detalhes</a>
+                            <a class="btn-details" data-bs-toggle="modal" data-bs-target="#detailsModal"
+                                data_titulo="{{col.titulo}}" href="#">Detalhes</a>
                         </td>
                         <td>{{col.titulo}}</td>
                         <td>{{col.volumes}}</td>
                         <td>
                             {% for item in result %}
-                                {% if item._id == col.titulo %}
-                                    {{ item.volumes_ok }} / {{col.volumes}}
-                                {% endif %}
+                            {% if item._id == col.titulo %}
+                            {{ item.volumes_ok }} / {{col.volumes}}
+                            {% endif %}
                             {% endfor %}
                         </td>
                         <td>{{col.vol_type}}</td>
@@ -134,11 +139,13 @@
                             <div id="mangaDetalhes">
                                 <h1 class="display-6 text-center sub-titulos" id="titulo"></h1>
                                 <h6 id="autor" class="sub-sub-titulos lead"></h6><br>
-                                <img id="mangaImagem"  class="img-attr mx-auto d-block img-thumbnail" alt="...">
-                                <h6 class="sub-sub-titulos">Descrição</h6> 
+                                <img id="mangaImagem" class="img-attr mx-auto d-block img-thumbnail" alt="...">
+                                <h6 class="sub-sub-titulos">Descrição</h6>
                                 <p class='text-des' id="descricao"></p>
-                                <h6 class="sub-sub-titulos">Lançamento</h6> <p class="text-center" id="lancamento"></p>
-                                <h6 class="sub-sub-titulos">Gênero</h6> <p class="text-center" id="genero"></p><br>
+                                <h6 class="sub-sub-titulos">Lançamento</h6>
+                                <p class="text-center" id="lancamento"></p>
+                                <h6 class="sub-sub-titulos">Gênero</h6>
+                                <p class="text-center" id="genero"></p><br>
                             </div>
                         </div>
                     </div>
@@ -154,65 +161,65 @@
                         <div class="modal-body">
                             <form action="/upload" method="post" enctype="multipart/form-data">
                                 <div class="form-group">
-                                  <label for="volumes">Volumes:</label>
-                                  <input type="number" class="form-control" id="volumes" name="volumes">
+                                    <label for="volumes">Volumes:</label>
+                                    <input type="number" class="form-control" id="volumes" name="volumes">
                                 </div>
                                 <div class="form-group">
-                                  <label for="titulo">Título:</label>
-                                  <input type="text" class="form-control" id="titulo" name="titulo">
+                                    <label for="titulo">Título:</label>
+                                    <input type="text" class="form-control" id="titulo" name="titulo">
                                 </div>
                                 <div class="form-group">
-                                  <label for="author">Autor:</label>
-                                  <input type="text" class="form-control" id="author" name="author">
+                                    <label for="author">Autor:</label>
+                                    <input type="text" class="form-control" id="author" name="author">
                                 </div>
                                 <div class="form-group">
-                                  <label for="status">Status:</label>
-                                  <select class="form-control" id="status" name="status">
-                                    <option>Comprado</option>
-                                    <option>Faltando</option>
-                                    <option>OK</option>
-                                  </select>
+                                    <label for="status">Status:</label>
+                                    <select class="form-control" id="status" name="status">
+                                        <option>COMPRADO</option>
+                                        <option>FALTANDO</option>
+                                        <option>OK</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
-                                  <label for="vol_type">Tipo:</label>
-                                  <select class="form-control" id="vol_type" name="vol_type">
-                                    <option>Regular</option>
-                                    <option>Edição Especial</option>
-                                    <option>Volume único</option>
-                                  </select>
+                                    <label for="vol_type">Tipo:</label>
+                                    <select class="form-control" id="vol_type" name="vol_type">
+                                        <option>Regular</option>
+                                        <option>Edição Especial</option>
+                                        <option>Volume único</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
-                                  <label for="descricao">Descrição:</label>
-                                  <textarea class="form-control" id="descricao" name="descricao" rows="3"></textarea>
+                                    <label for="descricao">Descrição:</label>
+                                    <textarea class="form-control" id="descricao" name="descricao" rows="3"></textarea>
                                 </div>
                                 <div class="form-group">
-                                  <label for="lancamento">Lançamento:</label>
-                                  <input type="text" class="form-control" id="lancamento" name="lancamento">
+                                    <label for="lancamento">Lançamento:</label>
+                                    <input type="text" class="form-control" id="lancamento" name="lancamento">
                                 </div>
                                 <div class="form-group">
-                                  <label for="genero">Gênero:</label>
-                                  <input type="text" class="form-control" id="genero" name="genero">
+                                    <label for="genero">Gênero:</label>
+                                    <input type="text" class="form-control" id="genero" name="genero">
                                 </div>
                                 <div class="form-group mt-5">
-                                  <label for="photo">Capa:</label>
-                                  <input type="file" class="form-control" id="photo" name="photo">
+                                    <label for="photo">Capa:</label>
+                                    <input type="file" class="form-control" id="photo" name="photo">
                                 </div>
                                 <div class="d-grid gap-2 col-6 mx-auto">
                                     <button type="submit" class="btn btn-all mt-5">Enviar</button>
-                                  </div>
-                              </form>
-                              
+                                </div>
+                            </form>
+
                         </div>
                     </div>
                 </div>
             </div><!--fim modal cadastro-->
         </div><!--fim div-style-->
 
-      </div><!--fim container-->
+    </div><!--fim container-->
 
-      <script>
-            document.addEventListener('DOMContentLoaded', function() {
-        const mangaDet = JSON.parse({{ manga_det | tojson |safe }});
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mangaDet = JSON.parse({{ manga_det | tojson | safe }});
 
         function findMangaByTitulo(titulo) {
             for (let manga of mangaDet) {
@@ -226,7 +233,7 @@
         const btnDetails = document.querySelectorAll('.btn-details');
 
         btnDetails.forEach(btn => {
-            btn.addEventListener('click', function() {
+            btn.addEventListener('click', function () {
                 const titulo = this.getAttribute('data_titulo');
                 console.log('Título do Mangá:', titulo);
 
@@ -239,7 +246,7 @@
                 document.getElementById('lancamento').innerText = manga.lancamento;
                 document.getElementById('genero').innerText = manga.genero;
                 document.getElementById('mangaImagem').src = '/static/img/' + manga.filename;
-                
+
 
             });
         });
