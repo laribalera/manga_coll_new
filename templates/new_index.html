@@ -152,30 +152,30 @@
                             <h4 class="sub-titulos">Adicionar nova coleção</h4>
                         </div>
                         <div class="modal-body">
-                            <form action="/create_collection" method="post" enctype="multipart/form-data">
+                            <form action="/insert_infos" method="post" enctype="multipart/form-data">
                                 <div class="form-group">
                                   <label for="volumes">Volumes:</label>
-                                  <input type="number" class="form-control" id="volumes">
+                                  <input type="number" class="form-control" id="volumes" name="volumes">
                                 </div>
                                 <div class="form-group">
                                   <label for="titulo">Título:</label>
                                   <input type="text" class="form-control" id="titulo" name="titulo">
                                 </div>
                                 <div class="form-group">
-                                  <label for="autor">Autor:</label>
-                                  <input type="text" class="form-control" id="autor">
+                                  <label for="author">Autor:</label>
+                                  <input type="text" class="form-control" id="author" name="author">
                                 </div>
                                 <div class="form-group">
                                   <label for="status">Status:</label>
-                                  <select class="form-control" id="status">
+                                  <select class="form-control" id="status" name="status">
                                     <option>Comprado</option>
                                     <option>Faltando</option>
                                     <option>OK</option>
                                   </select>
                                 </div>
                                 <div class="form-group">
-                                  <label for="tipo">Tipo:</label>
-                                  <select class="form-control" id="tipo">
+                                  <label for="vol_type">Tipo:</label>
+                                  <select class="form-control" id="vol_type" name="vol_type">
                                     <option>Regular</option>
                                     <option>Edição Especial</option>
                                     <option>Volume único</option>
@@ -183,11 +183,11 @@
                                 </div>
                                 <div class="form-group">
                                   <label for="descricao">Descrição:</label>
-                                  <textarea class="form-control" id="descricao" rows="3"></textarea>
+                                  <textarea class="form-control" id="descricao" name="descricao" rows="3"></textarea>
                                 </div>
                                 <div class="form-group">
-                                  <label for="lançamento">Lançamento:</label>
-                                  <input type="text" class="form-control" id="lançamento">
+                                  <label for="lancamento">Lançamento:</label>
+                                  <input type="text" class="form-control" id="lancamento" name="lancamento">
                                 </div>
                                 <div class="form-group">
                                   <label for="genero">Gênero:</label>
@@ -195,7 +195,7 @@
                                 </div>
                                 <div class="form-group mt-5">
                                   <label for="capa">Capa:</label>
-                                  <input type="file" class="form-control" id="capa">
+                                  <input type="file" class="form-control" id="capa" name="capa">
                                 </div>
                                 <div class="d-grid gap-2 col-6 mx-auto">
                                     <button type="submit" class="btn btn-all mt-5">Enviar</button>

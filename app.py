@@ -65,13 +65,50 @@ def volumes_page():
 
     return render_template('volumes_page.html', vol_data=vol_data)
 
-@app.route('/create_collection', methods=['POST'])
+@app.route('/insert_infos', methods=['POST'])
 
-def create_collection():
-#criar request
+def insert_infos():
+    form_data = request.form
+
+    #create new all_titles row
+    titles = {
+        'volumes': int(form_data['volumes']),
+        'titulo': form_data['titulo'],
+        'author': form_data['author']  ,   
+        'vol_type': form_data['vol_type']
+        }
+    collection_titles.insert_one(titles) 
+    
+    #create new all_volumes row
+    count_vol = int(form_data['volumes'])
+    volumes_list = []
+
+    for i in range(1, count_vol + 1):
+        volumes = {
+            'volumes': i,
+            'titulo': form_data['titulo'],
+            'author': form_data['author']  ,   
+            'status': form_data['status']
+            }  
+        volumes_list.append(volumes)
+
+    collection_volumes.insert_many(volumes_list)
+
+    #create new manga_details row
+    cover = form_data['capa']
+    #ajustar para subir a imagem da capa
 
 
+    details = {
+        'filename': , 
+        'author': form_data['author'],
+        'descricao': form_data['descricao'],
+        'lancamento': form_data['lancamento'],
+        'titulo': form_data['titulo'],
+        'genero': form_data['genero']
+        }
 
+    collection_manga.insert_one(details)
 
 
 if __name__ == '__main__':
