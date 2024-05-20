@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, send_file, redirect, url_for
+from flask import Flask, render_template, request, jsonify, send_file, redirect, url_for, flash
 from werkzeug.utils import secure_filename
 from pymongo import MongoClient
 from bson import ObjectId
@@ -6,6 +6,7 @@ import gridfs
 import os
 import json
 from io import BytesIO
+import secrets
 
 app = Flask(__name__)
 
@@ -14,6 +15,10 @@ dir_proj = os.path.dirname(os.path.abspath(__file__))
 UPLOAD_FOLDER = os.path.join(dir_proj, 'static', 'img')
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
+#secret_key pro flash
+app.secret_key = secrets.token_hex(32)
+
 
 #config do mongo
 client = MongoClient('localhost', 27017)
@@ -105,7 +110,7 @@ def insert_infos():
 
         for i in range(1, count_vol + 1):
             volumes = {
-                'volumes': i,
+                'volume': i,
                 'titulo': form_data['titulo'],
                 'author': form_data['author'],
                 'status': form_data['status']
@@ -138,6 +143,30 @@ def insert_infos():
         collection_manga.insert_one(details)
 
         return redirect(url_for('index'))
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+    
+@app.route('/update', methods=['POST'])
+
+def update_infos():
+    try:
+        form_data = request.form
+
+        volume_id = form_data.get('_id')
+        volume = form_data.get('volume')
+        titulo = form_data.get('titulo')
+        author = form_data.get('author')
+        status = form_data.get('status')
+
+        if not (volume_id and volume and titulo and author and status):
+            return jsonify({'error': 'Campos obrigatórios.'}), 400
+
+
+        collection_volumes.update_one({'_id': ObjectId(volume_id)}, {'$set': {'volume': volume, 'titulo': titulo, 'author': author, 'status': status}})
+        flash('Volume atualizado com sucesso!', 'success')
+        
+        return redirect(url_for('volumes_page'))
 
     except Exception as e:
         return jsonify({'error': str(e)}), 500
