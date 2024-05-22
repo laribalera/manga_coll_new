@@ -185,13 +185,13 @@
                     const titulo = row.cells[1].textContent;
                     const author = row.cells[2].textContent;
                     const status = row.cells[3].textContent;
-                    const volume_id = row.dataset.id; // Obtém o valor do _id do dataset
+                    const volume_id = row.dataset.id; 
 
                     document.getElementById('edit-volume').value = volume;
                     document.getElementById('edit-titulo').value = titulo;
                     document.getElementById('edit-author').value = author;
                     document.getElementById('edit-status').value = status;
-                    document.getElementById('edit-id').value = volume_id; // Preenche o campo _id do formulário
+                    document.getElementById('edit-id').value = volume_id;
                 });
             });
         });

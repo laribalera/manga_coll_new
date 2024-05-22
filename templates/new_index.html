@@ -14,7 +14,8 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link href="static/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
@@ -143,6 +144,7 @@
                         </div>
                         <div class="modal-body">
                             <div id="mangaDetalhes">
+                                <input type="hidden" name="_id" id="id-upd" value="">
                                 <h1 class="display-6 text-center sub-titulos" id="titulo"></h1>
                                 <h6 id="autor" class="sub-sub-titulos lead"></h6><br>
                                 <img id="mangaImagem" class="img-attr mx-auto d-block img-thumbnail" alt="...">
@@ -219,45 +221,42 @@
                     </div>
                 </div>
             </div><!--fim modal cadastro-->
-        </div><!--fim div-style-->
 
-    </div><!--fim container-->
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const mangaDet = JSON.parse({{ manga_det | tojson | safe }});
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const mangaDet = JSON.parse({{ manga_det | tojson | safe }});
-
-        function findMangaByTitulo(titulo) {
-            for (let manga of mangaDet) {
-                if (manga.titulo === titulo) {
-                    return manga;
+                function findMangaByTitulo(titulo) {
+                    for (let manga of mangaDet) {
+                        if (manga.titulo === titulo) {
+                            return manga;
+                        }
+                    }
+                    return {};
                 }
-            }
-            return {};
-        }
 
-        const btnDetails = document.querySelectorAll('.btn-details');
+                const btnDetails = document.querySelectorAll('.btn-details');
 
-        btnDetails.forEach(btn => {
-            btn.addEventListener('click', function () {
-                const titulo = this.getAttribute('data_titulo');
-                console.log('Título do Mangá:', titulo);
+                btnDetails.forEach(btn => {
+                    btn.addEventListener('click', function () {
+                        const titulo = this.getAttribute('data_titulo');
+                        console.log('Título do Mangá:', titulo);
 
-                document.getElementById('titulo_manga').value = titulo;
+                        document.getElementById('titulo_manga').value = titulo;
 
-                const manga = findMangaByTitulo(titulo);
-                document.getElementById('titulo').innerText = manga.titulo;
-                document.getElementById('autor').innerText = manga.autor;
-                document.getElementById('descricao').innerText = manga.descricao;
-                document.getElementById('lancamento').innerText = manga.lancamento;
-                document.getElementById('genero').innerText = manga.genero;
-                document.getElementById('mangaImagem').src = '/static/img/' + manga.filename;
+                        const manga = findMangaByTitulo(titulo);
+                        document.getElementById('titulo').innerText = manga.titulo;
+                        document.getElementById('autor').innerText = manga.autor;
+                        document.getElementById('descricao').innerText = manga.descricao;
+                        document.getElementById('lancamento').innerText = manga.lancamento;
+                        document.getElementById('genero').innerText = manga.genero;
+                        document.getElementById('mangaImagem').src = '/static/img/' + manga.filename;
 
 
-            });
-        });
+                    });
+                });
     });
-    </script>
+            </script>
 </body>
 
 </html>
