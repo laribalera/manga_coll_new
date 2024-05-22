@@ -149,7 +149,7 @@ def insert_infos():
     
 @app.route('/update', methods=['POST'])
 
-def update_infos():
+def delete_collection():
     try:
         form_data = request.form
 
@@ -170,6 +170,13 @@ def update_infos():
 
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+    
+@app.route('/delete', methods='DELETE')
+def delete_colecao():
+    
+    return True
+    
+
 
 if __name__ == '__main__':
     app.run(debug=True)
