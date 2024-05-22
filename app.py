@@ -170,6 +170,12 @@ def update_infos():
 
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+    
+# wip
+#@app.route('/update_coll', methods='POST')
+#def update_colecao():
+    
+
 
 if __name__ == '__main__':
     app.run(debug=True)
