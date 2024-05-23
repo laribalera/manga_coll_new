@@ -102,7 +102,7 @@
                 </thead>
                 <tbody class="table-group-divider">
                     {% for col in title_data %}
-                    <tr>
+                    <tr data-id="{{ col._id }}">
                         <td>
                             <a class="btn-details" data-bs-toggle="modal" data-bs-target="#detailsModal"
                                 data_titulo="{{col.titulo}}" href="#">Detalhes</a>
@@ -121,7 +121,8 @@
                         <td>
                             <a class="update-btn" data-bs-toggle="modal" data-bs-target="#updateModal"><span
                                     class="material-symbols-outlined">edit</span></a>
-                            <a class="delete-btn" href=""><span class="material-symbols-outlined">delete</span></a>
+                                    <a class="delete-btn" href="javascript:void(0);" onclick="deleteColl('{{ col._id }}')">
+                                        <span class="material-symbols-outlined">delete</span></a>
                         </td>
                     </tr>
                     {% endfor %}
@@ -222,6 +223,28 @@
                 </div>
             </div><!--fim modal cadastro-->
 
+            <script>
+                function deleteColl(collId) {
+                    if (confirm('Tem certeza de que deseja deletar esta coleção?')) {
+                        fetch(`/delete_col/${collId}`, {
+                            method: 'DELETE',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            }
+                        }).then(response => {
+                            if (response.ok) {
+                                alert('Coleção deletada com sucesso');
+                                location.reload();
+                            } else {
+                                alert('Erro ao deletar coleção');
+                            }
+                        }).catch(error => {
+                            console.error('Erro:', error);
+                            alert('Erro ao deletar coleção');
+                        });
+                    }
+                }
+            </script>
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
                     const mangaDet = JSON.parse({{ manga_det | tojson | safe }});

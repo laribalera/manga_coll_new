@@ -120,7 +120,8 @@
                         <td>
                             <a class="update-btn" data-bs-toggle="modal" data-bs-target="#updateModal"><span
                                     class="material-symbols-outlined">edit</span></a>
-                            <a class="delete-btn" href=""><span class="material-symbols-outlined">delete</span></a>
+                                    <a class="delete-btn" href="javascript:void(0);" onclick="deleteEntry('{{ entry._id }}')">
+                                        <span class="material-symbols-outlined">delete</span>
                         </td>
                     </tr>
                     {% endfor %}
@@ -175,6 +176,29 @@
 
     </div><!--fim container-->
 
+
+    <script>
+        function deleteEntry(entryId) {
+            if (confirm('Tem certeza de que deseja deletar este volume?')) {
+                fetch(`/delete_vol/${entryId}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }).then(response => {
+                    if (response.ok) {
+                        alert('Volume deletado com sucesso');
+                        location.reload();
+                    } else {
+                        alert('Erro ao deletar volume');
+                    }
+                }).catch(error => {
+                    console.error('Erro:', error);
+                    alert('Erro ao deletar volume');
+                });
+            }
+        }
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             const updateButtons = document.querySelectorAll('.update-btn');

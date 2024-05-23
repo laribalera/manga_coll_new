@@ -149,7 +149,7 @@ def insert_infos():
     
 @app.route('/update', methods=['POST'])
 
-def delete_collection():
+def update_collection():
     try:
         form_data = request.form
 
@@ -163,18 +163,37 @@ def delete_collection():
             return jsonify({'error': 'Campos obrigatórios.'}), 400
 
 
-        collection_volumes.update_one({'_id': ObjectId(volume_id)}, {'$set': {'volume': volume, 'titulo': titulo, 'author': author, 'status': status}})
+        collection_volumes.update_one({'_id': ObjectId(volume_id)}, {'$set': {'volume': int(volume), 'titulo': titulo, 'author': author, 'status': status}})
         flash('Volume atualizado com sucesso!', 'success')
         
         return redirect(url_for('volumes_page'))
 
     except Exception as e:
         return jsonify({'error': str(e)}), 500
-    
-@app.route('/delete', methods='DELETE')
-def delete_colecao():
-    
-    return True
+
+#delete volume unico
+@app.route('/delete_vol/<id>', methods=['DELETE'])
+def delete_vol(id):
+    try:
+        result = collection_volumes.delete_one({'_id': ObjectId(id)})
+        if result.deleted_count == 1:
+            return jsonify({'message': 'Arquivo deletado com sucesso'}), 200
+        else:
+            return jsonify({'message': 'Arquivo não encontrado'}), 404
+    except Exception as e:
+        return jsonify({'message': str(e)}), 500
+
+#delete coleção    
+@app.route('/delete_col/<id>', methods=['DELETE'])
+def delete_col(id):
+    try:
+        result = collection_titles.delete_one({'_id': ObjectId(id)})
+        if result.deleted_count == 1:
+            return jsonify({'message': 'Arquivo deletado com sucesso'}), 200
+        else:
+            return jsonify({'message': 'Arquivo não encontrado'}), 404
+    except Exception as e:
+        return jsonify({'message': str(e)}), 500
     
 
 
