@@ -70,7 +70,7 @@ Este repositório contém uma aplicação em construção para gerenciamento de 
 }
 ``` 
 
-## Atualizações
+## 🆗 Atualizações
 
 - [x] Upload de nova versão do app com integração com MongoDB
 - [x] Front end: Melhorar o visual da página
@@ -80,11 +80,12 @@ Este repositório contém uma aplicação em construção para gerenciamento de 
 - [X] Arrumar o andamento da coleção para aparecer zerado caso não hajam correspondencias
 - [X] Front end: Criar novo formulario para alimentar tabela de resumo + tabela de volumes
 - [X] Front end: Criar página de Volumes
-
+- [x] Metodo delete aplicado para volumes e coleção
+- [x] Update para volume
+       
 ## 🛠️ TO-DO
 
-- [ ] Front end: Fazer pagina de update bonita ou trocar para modal
-- [ ] Criar Update e delete para as coleções e volumes
+- [ ] Criar Update para as coleções
 - [ ] Criar upload de sheets para preencher as infos
 - [ ] Criar filtragem pela caixa de pesquisa
 - [ ] Adicionar paginação na aba Volumes
