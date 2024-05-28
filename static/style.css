@@ -173,3 +173,14 @@ body {
     text-align: justify;
     margin: 2%;
 }
+
+footer {
+    margin: 2%;
+    color: black;
+    text-align: center;
+}
+footer a{
+    color: #47185f;
+}
+
+
