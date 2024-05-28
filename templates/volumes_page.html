@@ -177,6 +177,21 @@
     </div><!--fim container-->
 
     <script>
+        document.getElementById('pesquisarManga').addEventListener('input', function () {
+            var filter = this.value.toLowerCase();
+            var rows = document.querySelectorAll('#table-vol tbody tr');
+
+            rows.forEach(function (row) {
+                var titulo = row.cells[1].textContent.toLowerCase();
+                if (titulo.indexOf(filter) > -1) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    <script>
         function deleteEntry(entryId) {
             if (confirm('Tem certeza de que deseja deletar este volume?')) {
                 fetch(`/delete_vol/${entryId}`, {

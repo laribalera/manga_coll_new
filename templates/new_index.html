@@ -50,13 +50,12 @@
                             <div class="col">
                                 <button type="submit" class="btn btn-all mb-3">Pesquisar</button>
                             </div>
-                            <div class="col-auto">
-                                <button class="btn btn-all mb-3" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFiltros" aria-expanded="false"
-                                    aria-controls="collapseFiltros">
+                            <!-- <div class="col-auto">
+                                <button class="btn btn-all mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiltros"
+                                    aria-expanded="false" aria-controls="collapseFiltros">
                                     Mostrar Filtro
                                 </button>
-                            </div>
+                            </div> -->
                         </form>
                     </div>
                 </div>
@@ -77,7 +76,7 @@
                                     <div class="mb-3">
                                         <label for="status" class="form-label">Tipo de Edição:</label>
                                         <select class="form-select mb-2" id="status" name="status">
-                                            <option value="regular">Regular</option>
+                                            <option value="regular">regular</option>
                                             <option value="specialEdition">Special Edition</option>
                                         </select>
                                     </div>
@@ -143,6 +142,7 @@
                 Nova Coleção
             </button>
         </div>
+
         <div class="modal fade" id="detailsModal">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -230,8 +230,21 @@
             </div>
         </div><!--fim modal cadastro-->
 
+        <script>
+            document.getElementById('pesquisarManga').addEventListener('input', function () {
+                var filter = this.value.toLowerCase();
+                var rows = document.querySelectorAll('#table-col tbody tr');
 
-
+                rows.forEach(function (row) {
+                    var titulo = row.cells[1].textContent.toLowerCase();
+                    if (titulo.indexOf(filter) > -1) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        </script>
         <script>
             const lines = 10;
             let current = 1;
@@ -348,12 +361,12 @@
 </body>
 <footer>
     <span>@baleralarissa<br></span>
-    
-        <a href="https://github.com/baleralarissa">
-            <span class="material-symbols-outlined">
-                account_tree
-            </span>
-        </a>
+
+    <a href="https://github.com/baleralarissa">
+        <span class="material-symbols-outlined">
+            account_tree
+        </span>
+    </a>
 </footer>
 
 </html>
