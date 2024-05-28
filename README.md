@@ -82,15 +82,15 @@ Este repositório contém uma aplicação em construção para gerenciamento de 
 - [X] Front end: Criar página de Volumes
 - [x] Metodo delete aplicado para volumes e coleção
 - [x] Update para volume
-       
+- [x] Ao deletar uma coleção, os volumes relacionados a ela também são deletados
+- [x] Adicionar paginação na aba Volumes
+
 ## 🛠️ TO-DO
 
 - [ ] Criar Update para as coleções
 - [ ] Criar upload de sheets para preencher as infos
 - [ ] Criar filtragem pela caixa de pesquisa
-- [ ] Adicionar paginação na aba Volumes
 - [ ] Criar aba de estatisticas das coleções? (ainda pensando sobre)
-
 
 ## Autores
 

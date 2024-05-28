@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, send_file, redirect, url_for, flash
+from flask import Flask, render_template, request, jsonify, redirect, url_for, flash
 from werkzeug.utils import secure_filename
 from pymongo import MongoClient
 from bson import ObjectId
@@ -177,9 +177,9 @@ def delete_vol(id):
     try:
         result = collection_volumes.delete_one({'_id': ObjectId(id)})
         if result.deleted_count == 1:
-            return jsonify({'message': 'Arquivo deletado com sucesso'}), 200
+            return jsonify({'message': 'Volume deletado com sucesso'}), 200
         else:
-            return jsonify({'message': 'Arquivo não encontrado'}), 404
+            return jsonify({'message': 'Volume não encontrado'}), 404
     except Exception as e:
         return jsonify({'message': str(e)}), 500
 
@@ -187,11 +187,22 @@ def delete_vol(id):
 @app.route('/delete_col/<id>', methods=['DELETE'])
 def delete_col(id):
     try:
+        col = collection_titles.find_one({'_id': ObjectId(id)})
+        if not col:
+            return jsonify({'message': 'Coleção não encontrada'}), 404
+        
+        # delete dos volumes da coleção para otimizar
+        delete_result = collection_volumes.delete_many({'titulo': col['titulo']})
+
+        # delete da coleção
         result = collection_titles.delete_one({'_id': ObjectId(id)})
         if result.deleted_count == 1:
-            return jsonify({'message': 'Arquivo deletado com sucesso'}), 200
+            return jsonify({
+                'message': 'Coleção e volumes deletados com sucesso', 
+                'volumes_deletados': delete_result.deleted_count
+            }), 200
         else:
-            return jsonify({'message': 'Arquivo não encontrado'}), 404
+            return jsonify({'message': 'Erro ao deletar a coleção'}), 500
     except Exception as e:
         return jsonify({'message': str(e)}), 500
     
