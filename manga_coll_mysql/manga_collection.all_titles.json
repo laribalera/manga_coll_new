@@ -1,0 +1,126 @@
+[{
+  "_id": {
+    "$oid": "663c13c19afc67b0b49efffb"
+  },
+  "titulo": "Demon Slayer",
+  "volumes": 23,
+  "vol_type": "regular",
+  "author": "Koyoharu Gotouge"
+},
+{
+  "_id": {
+    "$oid": "663c13c19afc67b0b49efffc"
+  },
+  "titulo": "Jujutsu Kaisen",
+  "volumes": 23,
+  "vol_type": "regular",
+  "author": "Gege Akutami"
+},
+{
+  "_id": {
+    "$oid": "663c13c19afc67b0b49efffd"
+  },
+  "titulo": "Chainsaw Man",
+  "volumes": 13,
+  "vol_type": "regular",
+  "author": "Tatsuki Fujimoto"
+},
+{
+  "_id": {
+    "$oid": "663c13c19afc67b0b49efffe"
+  },
+  "titulo": "Spy x Family",
+  "volumes": 12,
+  "vol_type": "regular",
+  "author": "Tatsuya Endo"
+},
+{
+  "_id": {
+    "$oid": "663c13c19afc67b0b49effff"
+  },
+  "titulo": "Citrus",
+  "volumes": 10,
+  "vol_type": "regular",
+  "author": "Saburouta"
+},
+{
+  "_id": {
+    "$oid": "663c13c19afc67b0b49f0000"
+  },
+  "titulo": "Soul Eater - Perfect Edition",
+  "volumes": 17,
+  "vol_type": "special edition",
+  "author": "Atsushi Ohkubo"
+},
+{
+  "_id": {
+    "$oid": "663c13c19afc67b0b49f0001"
+  },
+  "titulo": "Fullmetal Alchemist",
+  "volumes": 27,
+  "vol_type": "regular",
+  "author": "Hiromu Arakawa"
+},
+{
+  "_id": {
+    "$oid": "663c13c19afc67b0b49f0002"
+  },
+  "titulo": "Jojos Bizarre Adventures - Part 1 - Phantom Blood",
+  "volumes": 3,
+  "vol_type": "regular",
+  "author": "Hirohiko Araki"
+},
+{
+  "_id": {
+    "$oid": "663c13c19afc67b0b49f0003"
+  },
+  "titulo": "Jojos Bizarre Adventures - Part 2 - Battle Tendency",
+  "volumes": 7,
+  "vol_type": "regular",
+  "author": "Hirohiko Araki"
+},
+{
+  "_id": {
+    "$oid": "663c13c19afc67b0b49f0004"
+  },
+  "titulo": "Jojos Bizarre Adventures - Part 3 - Stardust Crusaders",
+  "volumes": 23,
+  "vol_type": "regular",
+  "author": "Hirohiko Araki"
+},
+{
+  "_id": {
+    "$oid": "663c13c19afc67b0b49f0005"
+  },
+  "titulo": "Jojos Bizarre Adventures - Part 4 - Diamond Is Unbreakable",
+  "volumes": 18,
+  "vol_type": "regular",
+  "author": "Hirohiko Araki"
+},
+{
+  "_id": {
+    "$oid": "663c13c19afc67b0b49f0006"
+  },
+  "titulo": "Jojos Bizarre Adventures - Part 5 - Golden Wind",
+  "volumes": 17,
+  "vol_type": "regular",
+  "author": "Hirohiko Araki"
+},
+{
+  "_id": {
+    "$oid": "663c13c19afc67b0b49f0007"
+  },
+  "titulo": "Jojos Bizarre Adventures - Part 6 - Stone Ocean",
+  "volumes": 17,
+  "vol_type": "regular",
+  "author": "Hirohiko Araki"
+},
+{
+  "_id": {
+    "$oid": "6647e95073583f3450b14dc5"
+  },
+  "volumes": 8,
+  "titulo": "Mob Pyscho 100",
+  "author": "ONE",
+  "vol_type": "Edição Especial"
+}]
