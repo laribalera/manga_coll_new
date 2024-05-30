@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mangá Manager</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="static/style.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 main-titulo">Mangá Manager</span>
+        </div>
+    </nav>
+
+    <ul class="nav justify-content-center nav-style">
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="{{ url_for('index') }}">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('volumes_page') }}">Volumes</a>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="div-style">
+            <h3 class="sub-titulos">Coleções</h3>
+
+
+            <div class="mt-5">
+                <div class="row">
+                    <div class="col">
+                        <form class="row mb-3 ">
+                            <div class="col-9">
+                                <input type="text" class="form-control mb-3" id="pesquisarManga" name="pesquisar"
+                                    placeholder="Pesquisar Mangá">
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-all mb-3">Pesquisar</button>
+                            </div>
+                            <!-- <div class="col-auto">
+                                <button class="btn btn-all mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiltros"
+                                    aria-expanded="false" aria-controls="collapseFiltros">
+                                    Mostrar Filtro
+                                </button>
+                            </div> -->
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="collapse" id="collapseFiltros">
+                            <div class="card card-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="autor" class="form-label">Autor:</label>
+                                        <select class="form-select mb-2" id="autor" name="autor">
+                                            <option value="autor1">Autor 1</option>
+                                            <option value="autor2">Autor 2</option>
+                                            <option value="autor3">Autor 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="status" class="form-label">Tipo de Edição:</label>
+                                        <select class="form-select mb-2" id="status" name="status">
+                                            <option value="regular">regular</option>
+                                            <option value="specialEdition">Special Edition</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <table class="table table-resumo mt-5" id="table-col">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Título do Mangá</th>
+                        <th scope="col">Volumes Totais</th>
+                        <th scope="col">Andamento</th>
+                        <th scope="col">Tipo de Edição</th>
+                        <th scope="col">Autor</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    {% for col in title_data %}
+                    <tr data-id="{{ col._id }}">
+                        <td>
+                            <a class="btn-details" data-bs-toggle="modal" data-bs-target="#detailsModal"
+                                data_titulo="{{col.titulo}}" href="#">Detalhes</a>
+                        </td>
+                        <td>{{col.titulo}}</td>
+                        <td>{{col.volumes}}</td>
+                        <td>
+                            {% for item in result %}
+                            {% if item._id == col.titulo %}
+                            {{ item.volumes_ok }} / {{col.volumes}}
+                            {% endif %}
+                            {% endfor %}
+                        </td>
+                        <td>{{col.vol_type}}</td>
+                        <td>{{col.author}}</td>
+                        <td>
+                            <a class="update-btn" data-bs-toggle="modal" data-bs-target="#updateModal"><span
+                                    class="material-symbols-outlined">edit</span></a>
+                            <a class="delete-btn" href="javascript:void(0);" onclick="deleteColl('{{ col._id }}')">
+                                <span class="material-symbols-outlined">delete</span></a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <input type="hidden" id="titulo_manga" name="titulo_manga" value="">
+
+            <div class="div-pag" id="pag">
+                <div class="pag-btn-group">
+                    <button id="back">&#60;</button>
+                    <span id="pagina"></span>
+                    <button id="next">&#62;</button>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-all" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Nova Coleção
+            </button>
+        </div>
+
+        <div class="modal fade" id="detailsModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="sub-sub-titulos">Detalhes do Mangá</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="mangaDetalhes">
+                            <input type="hidden" name="_id" id="id-upd" value="">
+                            <h1 class="display-6 text-center sub-titulos" id="titulo"></h1>
+                            <h6 id="autor" class="sub-sub-titulos lead"></h6><br>
+                            <img id="mangaImagem" class="img-attr mx-auto d-block img-thumbnail" alt="...">
+                            <h6 class="sub-sub-titulos">Descrição</h6>
+                            <p class='text-des' id="descricao"></p>
+                            <h6 class="sub-sub-titulos">Lançamento</h6>
+                            <p class="text-center" id="lancamento"></p>
+                            <h6 class="sub-sub-titulos">Gênero</h6>
+                            <p class="text-center" id="genero"></p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--fim modal details-->
+
+        <div class="modal fade" id="exampleModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="sub-titulos">Adicionar nova coleção</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/upload" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="volumes">Volumes:</label>
+                                <input type="number" class="form-control" id="volumes" name="volumes">
+                            </div>
+                            <div class="form-group">
+                                <label for="titulo">Título:</label>
+                                <input type="text" class="form-control" id="titulo" name="titulo">
+                            </div>
+                            <div class="form-group">
+                                <label for="author">Autor:</label>
+                                <input type="text" class="form-control" id="author" name="author">
+                            </div>
+                            <div class="form-group">
+                                <label for="status">Status:</label>
+                                <select class="form-control" id="status" name="status">
+                                    <option>COMPRADO</option>
+                                    <option>FALTANDO</option>
+                                    <option>OK</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="vol_type">Tipo:</label>
+                                <select class="form-control" id="vol_type" name="vol_type">
+                                    <option>Regular</option>
+                                    <option>Edição Especial</option>
+                                    <option>Volume único</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="descricao">Descrição:</label>
+                                <textarea class="form-control" id="descricao" name="descricao" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="lancamento">Lançamento:</label>
+                                <input type="text" class="form-control" id="lancamento" name="lancamento">
+                            </div>
+                            <div class="form-group">
+                                <label for="genero">Gênero:</label>
+                                <input type="text" class="form-control" id="genero" name="genero">
+                            </div>
+                            <div class="form-group mt-5">
+                                <label for="photo">Capa:</label>
+                                <input type="file" class="form-control" id="photo" name="photo">
+                            </div>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button type="submit" class="btn btn-all mt-5">Enviar</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div><!--fim modal cadastro-->
+
+        <script>
+            document.getElementById('pesquisarManga').addEventListener('input', function () {
+                var filter = this.value.toLowerCase();
+                var rows = document.querySelectorAll('#table-col tbody tr');
+
+                rows.forEach(function (row) {
+                    var titulo = row.cells[1].textContent.toLowerCase();
+                    if (titulo.indexOf(filter) > -1) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        </script>
+        <script>
+            const lines = 10;
+            let current = 1;
+
+            const table = document.getElementById('table-col');
+            const pag = document.getElementById('pag');
+            const back = document.getElementById('back');
+            const next = document.getElementById('next');
+            const pageSpan = document.getElementById('pagina');
+
+            function loadData() {
+                const linhas = table.rows;
+                const allLines = linhas.length - 1;
+                const totalPages = Math.ceil(allLines / lines);
+
+                // Esconde todas as linhas
+                for (let i = 1; i < linhas.length; i++) {
+                    linhas[i].style.display = 'none';
+                }
+
+                const ini = (current - 1) * lines + 1;
+                let end = ini + lines - 1;
+                if (end > allLines) {
+                    end = allLines;
+                }
+
+                for (let i = ini; i <= end; i++) {
+                    linhas[i].style.display = '';
+                }
+
+                pageSpan.innerText = `Página ${current} de ${totalPages}`;
+            }
+
+            function goToPage(pagina) {
+                current = pagina;
+                loadData();
+            }
+
+            back.addEventListener('click', () => {
+                if (current > 1) {
+                    goToPage(current - 1);
+                }
+            });
+
+            next.addEventListener('click', () => {
+                const allLines = table.rows.length - 1;
+                const totalPages = Math.ceil(allLines / lines);
+
+                if (current < totalPages) {
+                    goToPage(current + 1);
+                }
+            });
+
+            loadData();
+        </script>
+        <script>
+            function deleteColl(collId) {
+                if (confirm('Tem certeza de que deseja deletar esta coleção? Esta ação irá deletar a coleção e os volumes registrados.')) {
+                    fetch(`/delete_col/${collId}`, {
+                        method: 'DELETE',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    }).then(response => {
+                        if (response.ok) {
+                            alert('Coleção deletada com sucesso');
+                            location.reload();
+                        } else {
+                            alert('Erro ao deletar coleção');
+                        }
+                    }).catch(error => {
+                        console.error('Erro:', error);
+                        alert('Erro ao deletar coleção');
+                    });
+                }
+            }
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const mangaDet = JSON.parse({{ manga_det | tojson | safe }});
+
+            function findMangaByTitulo(titulo) {
+                for (let manga of mangaDet) {
+                    if (manga.titulo === titulo) {
+                        return manga;
+                    }
+                }
+                return {};
+            }
+
+            const btnDetails = document.querySelectorAll('.btn-details');
+
+            btnDetails.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const titulo = this.getAttribute('data_titulo');
+                    console.log('Título do Mangá:', titulo);
+
+                    document.getElementById('titulo_manga').value = titulo;
+
+                    const manga = findMangaByTitulo(titulo);
+                    document.getElementById('titulo').innerText = manga.titulo;
+                    document.getElementById('autor').innerText = manga.autor;
+                    document.getElementById('descricao').innerText = manga.descricao;
+                    document.getElementById('lancamento').innerText = manga.lancamento;
+                    document.getElementById('genero').innerText = manga.genero;
+                    document.getElementById('mangaImagem').src = '/static/img/' + manga.filename;
+
+
+                });
+            });
+    });
+        </script>
+
+</body>
+<footer>
+    <span>@baleralarissa<br></span>
+
+    <a href="https://github.com/baleralarissa">
+        <span class="material-symbols-outlined">
+            account_tree
+        </span>
+    </a>
+</footer>
+
+</html>

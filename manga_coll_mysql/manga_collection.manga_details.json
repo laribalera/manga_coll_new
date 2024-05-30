@@ -1,0 +1,210 @@
+[{
+  "_id": {
+    "$oid": "663fbc7a3bcbf5b6b174785b"
+  },
+  "filename": "chainsaw.jpg",
+  "image_id": {
+    "$oid": "663fbc7a3bcbf5b6b1747859"
+  },
+  "autor": "Tatsuki Fujimoto",
+  "descricao": "Denji é um jovem extremamente pobre que junto de Pochita, seu demônio de estimação, trabalha feito um condenado como Caçador de Demônios para pagar a imensa dívida que possui. Mas sua vida de miséria está prestes a mudar graças a uma traição brutal!! Aqui começa a história de um novo anti-herói que com um demônio em seu corpo, caça demônios",
+  "lancamento": "2018",
+  "titulo": "Chainsaw Man",
+  "genero": "Shonen",
+  "id": 3
+},
+{
+  "_id": {
+    "$oid": "663fbc7a3bcbf5b6b174785e"
+  },
+  "filename": "citrus.JPG",
+  "image_id": {
+    "$oid": "663fbc7a3bcbf5b6b174785c"
+  },
+  "autor": "Saburouta",
+  "descricao": "Yuzu Aihara, uma menina espontânea, divertida e ligada em moda, muda-se a uma nova vizinhança e escola após o segundo casamento de sua mãe. Mais preocupada com meninos e compras do que com estudos, Yuzu luta para encaixar-se na escola de meninas conservadoras, logo no primeiro dia se desentende com Mei Aihara, a rígida, esforçada e bela presidente do Conselho Estudantil. Descobre que, devido ao novo casamento de sua mãe, Mei acaba se tornando a nova irmã, que logo na primeira noite lhe roubou o primeiro beijo, despertando sentimentos que Yuzu não compreende.",
+  "lancamento": "2012",
+  "titulo": "Citrus",
+  "genero": "Yuri/shoujo-ai",
+  "id": 5
+},
+{
+  "_id": {
+    "$oid": "663fbc7a3bcbf5b6b1747862"
+  },
+  "filename": "demon_slayer.jpg",
+  "image_id": {
+    "$oid": "663fbc7a3bcbf5b6b174785f"
+  },
+  "autor": "Koyoharu Gotouge",
+  "descricao": "Ambientada no Japão durante o Período Taishō 1912-1926, a história gira em torno de Tanjirō Kamado, um garoto bondoso e inteligente que vive junto com sua mãe, Kie Kamado, e seus 5 irmãos mais novos, ganhando dinheiro vendendo carvão, assim como seu falecido pai, Tanjuro Kamado. Certo dia, ao voltar para casa após ter ido a uma cidade vender carvão, Tanjiro descobre que perdeu toda sua família durante um ataque de onis. Uma de suas irmãs, Nezuko, é a única que sobreviveu ao ataque. Nezuko então passa a ser um oni, mas ela surpreendentemente ainda demonstra sinais de emoções e pensamentos humanos. Tanjirō decide então se tornar um caçador de onis para descobrir mais sobre eles. Com a ajuda de Nezuko, Tanjiro parte em jornadas pelo Japão a fim de impedir que a mesma tragédia que afetou sua família aconteça com outras pessoas, enquanto ele busca uma maneira de tornar Nezuko humana novamente.",
+  "lancamento": "2018",
+  "titulo": "Demon Slayer",
+  "genero": "Shonen",
+  "id": 1
+},
+{
+  "_id": {
+    "$oid": "663fbc7a3bcbf5b6b1747865"
+  },
+  "filename": "full.jpg",
+  "image_id": {
+    "$oid": "663fbc7a3bcbf5b6b1747863"
+  },
+  "autor": "Hiromu Arakawa",
+  "descricao": "Edward e Alphonse Elric são dois irmãos alquimistas procurando o catalisador lendário chamado pedra filosofal, um objeto poderoso que lhes permite restaurar seus corpos que foram perdidos numa tentativa de trazer sua mãe de volta à vida pelo uso da alquimia.",
+  "lancamento": "2003",
+  "titulo": "Fullmetal Alchemist",
+  "genero": "Shonen",
+  "id": 7
+},
+{
+  "_id": {
+    "$oid": "663fbc7a3bcbf5b6b174786b"
+  },
+  "filename": "jojo1.jpg",
+  "image_id": {
+    "$oid": "663fbc7a3bcbf5b6b1747866"
+  },
+  "autor": "Hirohiko Araki",
+  "descricao": "A história se centraliza em um jovem chamado de Jonathan Joestar, também conhecido como JoJo, filho único de George Joestar I no ano de 1880. Ele até então segue sua vida normalmente, buscando se tornar um verdadeiro cavalheiro, até que um sujeito chamado Dio muda sua vida por completo quando é adotado pelo George.  Dio tem intenções malignas de tomar o lugar do JoJo da família Joestar e ficar com tudo que é dele, para isso ele irá torturar o Jojo psicologicamente.",
+  "lancamento": "1987",
+  "titulo": "Jojos Bizarre Adventures - Part 1 - Phantom Blood",
+  "genero": "Shonen",
+  "id": 8
+},
+{
+  "_id": {
+    "$oid": "663fbc7a3bcbf5b6b1747870"
+  },
+  "filename": "jojo2.jpg",
+  "image_id": {
+    "$oid": "663fbc7a3bcbf5b6b174786c"
+  },
+  "autor": "Hirohiko Araki",
+  "descricao": "Passado na América do Norte e na Europa em 1938–39 à volta de 50 anos depois de Phantom Blood, a história segue Joseph Joestar e Caesar Anthonio Zeppeli, respectivamente descendentes de Jonathan Joestar e Will A. Zeppeli de Phantom Blood que conseguem manipular energia baseada em luz solar chamada Hamon. Junto com a mestre de Hamon Lisa Lisa, Joseph e Caesar procuram prevenir os humanóides antigos chamados Homens Pilar, que inventaram as máscaras de pedra de Phantom Blood, de obterem uma pedra poderosa chamada Super Aja, que os evoluiria em seres supremos e conquistaria a sua vulnerabilidade à luz solar.",
+  "lancamento": "1987",
+  "titulo": "Jojos Bizarre Adventures - Part 2 - Battle Tendency",
+  "genero": "Shonen",
+  "id": 9
+},
+{
+  "_id": {
+    "$oid": "663fbc7a3bcbf5b6b1747874"
+  },
+  "filename": "jojo3.jpg",
+  "image_id": {
+    "$oid": "663fbc7a3bcbf5b6b1747871"
+  },
+  "autor": "Hirohiko Araki",
+  "descricao": "Em 1987, Jotaro Kujo inesperadamente desenvolve um poder misteriosos conhecido como Stand. Jotaro, seu avô Joseph Joestar e seus aliados, viajam para o Egito em busca do malvado e imortal vampiro Dio Brando , agora conhecido apenas como DIO para salvar a mãe de Jotaro, Holly Kujo, cujo Stand despertou e ameaça consumi-la em 50 dias. Enquanto isso, DIO encomendou um número de assassinos com vários tipos de Stands mortais para destruí-los antes que eles possam alcançá-lo.",
+  "lancamento": "1989",
+  "titulo": "Jojos Bizarre Adventures - Part 3 - Stardust Crusaders",
+  "genero": "Shonen",
+  "id": 10
+},
+{
+  "_id": {
+    "$oid": "663fbc7a3bcbf5b6b1747877"
+  },
+  "filename": "jojo4.jpg",
+  "image_id": {
+    "$oid": "663fbc7a3bcbf5b6b1747875"
+  },
+  "autor": "Hirohiko Araki",
+  "descricao": "A historia passa-se em 1999, a temporada segue as aventuras de Josuke Higashikata, o filho ilegítimo de Joseph Joestar, enquanto ele e seus novos amigos buscam um arco e flecha mágico que concedeu às pessoas poderes perigosos de Stand, arrancando a vida antes tranquila de Josuke em sua casa cidade de Morioh.",
+  "lancamento": "1992",
+  "titulo": "Jojos Bizarre Adventures - Part 4 - Diamond Is Unbreakable",
+  "genero": "Shonen",
+  "id": 11
+},
+{
+  "_id": {
+    "$oid": "663fbc7a3bcbf5b6b174787a"
+  },
+  "filename": "jojo5.JPG",
+  "image_id": {
+    "$oid": "663fbc7a3bcbf5b6b1747878"
+  },
+  "autor": "Hirohiko Araki",
+  "descricao": "Em 2001, dois anos após os eventos de Diamond Is Unbreakable , Koichi Hirose é enviado para a Itália por Jotaro Kujo, que o incumbe de investigar uma pessoa conhecida como Haruno Shiobana, cujo nome verdadeiro é revelado mais tarde como Giorno Giovanna, filho de Jonathan Joestar e indiretamente Dio Brando. A história segue então Giorno em seu objetivo de chegar ao topo do grupo mafioso \"Passione\" no qual seu objetivo e de transformá-los em um bando de ladrões honrados.",
+  "lancamento": "1995",
+  "titulo": "Jojos Bizarre Adventures - Part 5 - Golden Wind",
+  "genero": "Shonen",
+  "id": 12
+},
+{
+  "_id": {
+    "$oid": "663fbc7a3bcbf5b6b174787d"
+  },
+  "filename": "jojo6.JPG",
+  "image_id": {
+    "$oid": "663fbc7a3bcbf5b6b174787b"
+  },
+  "autor": "Hirohiko Araki",
+  "descricao": "Passado em 2011, Jolyne Cujoh foi condenada por 15 anos de prisão depois de se envolver em um acidente de carro e ser acusado de homicídio. Ela está presa na Prisão Green Dolphin Street, na Flórida, apelidada de \"Aquário\". Seu pai, Jotaro Kujo, dá a ela um pingente que faz com que um misterioso poder desperte dentro dela. Quando uma série de eventos inexplicáveis ​​ocorrem, Jotaro informa sua filha que um discípulo de DIO a incriminou para que ele pudesse matá-la na prisão, e a encoraja a escapar.",
+  "lancamento": "1999",
+  "titulo": "Jojos Bizarre Adventures - Part 6 - Stone Ocean",
+  "genero": "Shonen",
+  "id": 13
+},
+{
+  "_id": {
+    "$oid": "663fbc7a3bcbf5b6b1747880"
+  },
+  "filename": "jujutsu.jpg",
+  "image_id": {
+    "$oid": "663fbc7a3bcbf5b6b174787e"
+  },
+  "autor": "Gege Akutami",
+  "descricao": "Apesar do estudante colegial Yuuji Itadori ter grande força física, ele se inscreve no Clube de Ocultismo. Certo dia, eles encontram um ´objeto amaldiçoado´ e retiram o selo, atraindo criaturas chamadas de ´maldições´. Itadori corre em socorro de seus colegas, mas será que ele será capaz de abater essas criaturas usando apenas a força física?",
+  "lancamento": "2018",
+  "titulo": "Jujutsu Kaisen",
+  "genero": "Shonen",
+  "id": 2
+},
+{
+  "_id": {
+    "$oid": "663fbc7a3bcbf5b6b174788a"
+  },
+  "filename": "soul.jpg",
+  "image_id": {
+    "$oid": "663fbc7a3bcbf5b6b1747888"
+  },
+  "autor": "Atsushi Ohkubo",
+  "descricao": "Maka é uma “artífice de foice” determinada a transformar seu parceiro, a foice sobrenatural Soul Eater, na mais poderosa Death Scythe – uma arma que será usada pelo Doutor Morte, o diretor da Academia da Morte para Armas e Artífices Neófitos (AMAAN). Para conseguir seu objetivo, a garota precisa fazer com que Soul Eater devore a alma de 99 humanos e a de uma bruxa.  Mas ela não é a única que deseja isso. Também estão nessa “empreitada” o grande ninja Black ☆Star e sua parceira Tsubaki; e o filho do Dr. Morte – o perfeccionista Death the Kid – e suas pistolas, as irmãs Liz e Patti Thompson.",
+  "lancamento": "2022",
+  "titulo": "Soul Eater - Perfect Edition",
+  "genero": "Shonen",
+  "id": 6
+},
+{
+  "_id": {
+    "$oid": "663fbc7a3bcbf5b6b174788d"
+  },
+  "filename": "spy.JPG",
+  "image_id": {
+    "$oid": "663fbc7a3bcbf5b6b174788b"
+  },
+  "autor": "Tatsuya Endo",
+  "descricao": "O habilidoso espião ´Twilight´ é instruído a construir uma ´família´ para se infiltrar em uma tradicional instituição de ensino. Mas a ´filha´ que ele encontra é uma paranormal que lê mentes! E a ´esposa´ é uma assassina?! Ocultando um do outro suas identidades, essa família temporária terá de enfrentar os perigos dos exames de admissão e do mundo em uma espirituosa comédia doméstica.",
+  "lancamento": "2019",
+  "titulo": "Spy x Family",
+  "genero": "Shonen",
+  "id": 4
+},
+{
+  "_id": {
+    "$oid": "6647e95073583f3450b14dcf"
+  },
+  "filename": "mob.jpg",
+  "image_id": {
+    "$oid": "6647e95073583f3450b14dce"
+  },
+  "autor": "ONE",
+  "descricao": "A história desenrola-se à volta de Mob, um jovem que explodirá se a sua capacidade emocional chegar aos 100%. Este jovem com poderes psíquicos ganhou o apelido de Mob pois ele não se destaca entre as outras pessoas, por isso seu nome, o qual contém várias traduções. Ele contém os seus poderes psíquicos para que possa viver normalmente, porém se o seu nível emocional chegar a 100%, sua emoção mais dominante no instante irá sobrecarregar o seu corpo inteiro. Estas emoções podem ser ditas como estresse, raiva, pavor, dentre vários outros, dependendo da situação do dia-a-dia de Mob.",
+  "lancamento": "2012",
+  "titulo": "Mob Pyscho 100",
+  "genero": "Shonen",
+  "id": 14
+}]

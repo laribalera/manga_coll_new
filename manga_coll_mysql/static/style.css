@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Honk&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    background-color: rgba(173, 109, 247, 0.7);
+}
+
+.main-titulo {
+    color: #8931b5;
+    font-weight: bold; 
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+}
+
+.sub-titulos{
+    color: #8931b5;
+    font-weight: bold; 
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-style: unset;
+    margin-bottom: 2%;
+}
+
+.sub-sub-titulos{
+    color: #8931b5;
+    font-weight: bold; 
+    text-align: center;
+    font-family: 'Lato';
+    font-style: unset;
+}
+
+.nav-style {
+    background-color: #8931b5;
+    border-radius: 5px;
+    margin: 1% 1%;
+}
+
+.nav-style a{
+    color: #fff;
+    font-family: 'Lato';
+    font-style: unset;
+    font-weight: bold;
+    
+}
+
+.nav-style a:hover{
+    color: #8931b5;
+    background-color: #fff;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-style: unset;   
+}
+
+.nav-style a:active{
+    color: #8931b5;
+    background-color: #fff;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-style: unset;
+    
+}
+
+.div-style {
+    background-color: white;
+    padding: 4% 5%;
+    border-radius: 5px;
+    margin: 5% 0 0 0;
+}
+
+.table-resumo{
+    text-align: center;
+    border-radius: 5px;
+}
+
+.table-resumo thead{
+    font-family: 'Lato';
+}
+
+.update-btn{
+    color:#8931b5;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0%;
+    margin: 2%;
+    
+}
+
+.delete-btn{
+    color: rgba(126, 24, 87, 0.7);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 2%;
+    
+}
+
+.form-style label {
+    font-weight: bold;
+}
+.form-style input, select{
+    border: solid 1px #8931b5;
+    border-radius: 5px;
+    margin: 0 1.5% 0 0px;
+    
+}
+
+.form-style button{
+    background-color: rgba(245, 47, 235, 0.7);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding:1% 5%;
+    border: 1px solid transparent;
+}
+
+.div-pag{
+    display: grid;
+    place-items: center;
+}
+
+.pag-btn-group{
+    margin: 2%;
+    font-weight: bold;
+}
+
+.pag-btn-group button{
+    background-color: rgba(245, 47, 235, 0.7);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid transparent;}
+
+.btn-all{
+    background-color: rgb(112, 41, 194);;
+    color: #fff;
+    border-radius: 4%;
+}
+
+.btn-all:hover{
+    background-color: rgb(112, 41, 194);;
+    color: #fff;
+    border-radius: 4%;
+}
+
+.btn-details{
+    background-color: rgba(173, 109, 247, 0.7);;
+    padding: 7% 10%;
+    margin-right: 7%;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3%;
+}
+
+.btn-details:hover{
+    background-color: #8931b5;
+    padding: 7% 10%;
+    margin-right: 7%;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3%;
+    transition: 9ms;
+}
+
+.img-attr{
+    width: 40%;
+    margin-bottom: 3%;
+}
+
+.text-des{
+    text-align: justify;
+    margin: 2%;
+}
+
+footer {
+    margin: 2%;
+    color: black;
+    text-align: center;
+}
+footer a{
+    color: #47185f;
+}
+
+

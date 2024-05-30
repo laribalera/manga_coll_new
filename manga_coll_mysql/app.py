@@ -18,8 +18,8 @@ app.secret_key = secrets.token_hex(32)
 
 # config do MySQL
 db_config = {
-    'user': 'your_username',
-    'password': 'your_password',
+    'user': 'root',
+    'password': '',
     'host': 'localhost',
     'database': 'manga_collection',
 }

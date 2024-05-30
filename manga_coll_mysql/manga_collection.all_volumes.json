@@ -1,0 +1,1850 @@
+[{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0041"
+  },
+  "volume": 2,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "OK",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0042"
+  },
+  "volume": 3,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "OK",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0043"
+  },
+  "volume": 4,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "OK",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0044"
+  },
+  "volume": 5,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "OK",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0045"
+  },
+  "volume": 6,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "OK",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0046"
+  },
+  "volume": 7,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "OK",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0047"
+  },
+  "volume": 8,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "OK",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0048"
+  },
+  "volume": 9,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "OK",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0049"
+  },
+  "volume": 10,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "OK",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f004a"
+  },
+  "volume": 11,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "OK",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f004b"
+  },
+  "volume": 12,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "OK",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f004c"
+  },
+  "volume": 13,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "OK",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f004d"
+  },
+  "volume": 14,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "OK",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f004e"
+  },
+  "volume": 15,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "OK",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f004f"
+  },
+  "volume": 16,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "OK",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0050"
+  },
+  "volume": 17,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "OK",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0051"
+  },
+  "volume": 18,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "FALTANDO",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0052"
+  },
+  "volume": 19,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "FALTANDO",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0053"
+  },
+  "volume": 20,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "OK",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0054"
+  },
+  "volume": 21,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "OK",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0055"
+  },
+  "volume": 22,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "FALTANDO",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0056"
+  },
+  "volume": 23,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "OK",
+  "id_col": 1
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0057"
+  },
+  "volume": 0,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0058"
+  },
+  "volume": 1,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0059"
+  },
+  "volume": 2,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f005a"
+  },
+  "volume": 3,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f005b"
+  },
+  "volume": 4,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f005c"
+  },
+  "volume": 5,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f005d"
+  },
+  "volume": 6,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f005e"
+  },
+  "volume": 7,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f005f"
+  },
+  "volume": 8,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0060"
+  },
+  "volume": 9,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0061"
+  },
+  "volume": 10,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0062"
+  },
+  "volume": 11,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0063"
+  },
+  "volume": 12,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0064"
+  },
+  "volume": 13,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0065"
+  },
+  "volume": 14,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0066"
+  },
+  "volume": 15,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0067"
+  },
+  "volume": 16,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0068"
+  },
+  "volume": 17,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0069"
+  },
+  "volume": 18,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f006a"
+  },
+  "volume": 19,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f006b"
+  },
+  "volume": 20,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f006c"
+  },
+  "volume": 21,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f006d"
+  },
+  "volume": 22,
+  "titulo": "Jujutsu Kaisen",
+  "author": "Gege Akutami",
+  "status": "OK",
+  "id_col": 2
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f006e"
+  },
+  "volume": 1,
+  "titulo": "Chainsaw Man",
+  "author": "Tatsuki Fujimoto",
+  "status": "OK",
+  "id_col": 3
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f006f"
+  },
+  "volume": 2,
+  "titulo": "Chainsaw Man",
+  "author": "Tatsuki Fujimoto",
+  "status": "OK",
+  "id_col": 3
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0070"
+  },
+  "volume": 3,
+  "titulo": "Chainsaw Man",
+  "author": "Tatsuki Fujimoto",
+  "status": "OK",
+  "id_col": 3
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0071"
+  },
+  "volume": 4,
+  "titulo": "Chainsaw Man",
+  "author": "Tatsuki Fujimoto",
+  "status": "OK",
+  "id_col": 3
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0072"
+  },
+  "volume": 5,
+  "titulo": "Chainsaw Man",
+  "author": "Tatsuki Fujimoto",
+  "status": "OK",
+  "id_col": 3
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0073"
+  },
+  "volume": 6,
+  "titulo": "Chainsaw Man",
+  "author": "Tatsuki Fujimoto",
+  "status": "OK",
+  "id_col": 3
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0074"
+  },
+  "volume": 7,
+  "titulo": "Chainsaw Man",
+  "author": "Tatsuki Fujimoto",
+  "status": "OK",
+  "id_col": 3
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0075"
+  },
+  "volume": 8,
+  "titulo": "Chainsaw Man",
+  "author": "Tatsuki Fujimoto",
+  "status": "OK",
+  "id_col": 3
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0076"
+  },
+  "volume": 9,
+  "titulo": "Chainsaw Man",
+  "author": "Tatsuki Fujimoto",
+  "status": "OK",
+  "id_col": 3
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0077"
+  },
+  "volume": 10,
+  "titulo": "Chainsaw Man",
+  "author": "Tatsuki Fujimoto",
+  "status": "OK",
+  "id_col": 3
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0078"
+  },
+  "volume": 11,
+  "titulo": "Chainsaw Man",
+  "author": "Tatsuki Fujimoto",
+  "status": "OK",
+  "id_col": 3
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0079"
+  },
+  "volume": 12,
+  "titulo": "Chainsaw Man",
+  "author": "Tatsuki Fujimoto",
+  "status": "OK",
+  "id_col": 3
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f007a"
+  },
+  "volume": 13,
+  "titulo": "Chainsaw Man",
+  "author": "Tatsuki Fujimoto",
+  "status": "OK",
+  "id_col": 3
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f007b"
+  },
+  "volume": 1,
+  "titulo": "Spy x Family",
+  "author": "Tatsuya Endo",
+  "status": "OK",
+  "id_col": 4
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f007c"
+  },
+  "volume": 2,
+  "titulo": "Spy x Family",
+  "author": "Tatsuya Endo",
+  "status": "OK",
+  "id_col": 4
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f007d"
+  },
+  "volume": 3,
+  "titulo": "Spy x Family",
+  "author": "Tatsuya Endo",
+  "status": "OK",
+  "id_col": 4
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f007e"
+  },
+  "volume": 4,
+  "titulo": "Spy x Family",
+  "author": "Tatsuya Endo",
+  "status": "OK",
+  "id_col": 4
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f007f"
+  },
+  "volume": 5,
+  "titulo": "Spy x Family",
+  "author": "Tatsuya Endo",
+  "status": "OK",
+  "id_col": 4
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0080"
+  },
+  "volume": 6,
+  "titulo": "Spy x Family",
+  "author": "Tatsuya Endo",
+  "status": "OK",
+  "id_col": 4
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0081"
+  },
+  "volume": 7,
+  "titulo": "Spy x Family",
+  "author": "Tatsuya Endo",
+  "status": "OK",
+  "id_col": 4
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0082"
+  },
+  "volume": 8,
+  "titulo": "Spy x Family",
+  "author": "Tatsuya Endo",
+  "status": "OK",
+  "id_col": 4
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0083"
+  },
+  "volume": 9,
+  "titulo": "Spy x Family",
+  "author": "Tatsuya Endo",
+  "status": "OK",
+  "id_col": 4
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0084"
+  },
+  "volume": 10,
+  "titulo": "Spy x Family",
+  "author": "Tatsuya Endo",
+  "status": "OK",
+  "id_col": 4
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0085"
+  },
+  "volume": 11,
+  "titulo": "Spy x Family",
+  "author": "Tatsuya Endo",
+  "status": "OK",
+  "id_col": 4
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0086"
+  },
+  "volume": 12,
+  "titulo": "Spy x Family",
+  "author": "Tatsuya Endo",
+  "status": "FALTANDO",
+  "id_col": 4
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0087"
+  },
+  "volume": 1,
+  "titulo": "Citrus",
+  "author": "Saburouta",
+  "status": "OK",
+  "id_col": 5
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0088"
+  },
+  "volume": 2,
+  "titulo": "Citrus",
+  "author": "Saburouta",
+  "status": "OK",
+  "id_col": 5
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0089"
+  },
+  "volume": 3,
+  "titulo": "Citrus",
+  "author": "Saburouta",
+  "status": "OK",
+  "id_col": 5
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f008a"
+  },
+  "volume": 4,
+  "titulo": "Citrus",
+  "author": "Saburouta",
+  "status": "OK",
+  "id_col": 5
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f008b"
+  },
+  "volume": 5,
+  "titulo": "Citrus",
+  "author": "Saburouta",
+  "status": "OK",
+  "id_col": 5
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f008c"
+  },
+  "volume": 6,
+  "titulo": "Citrus",
+  "author": "Saburouta",
+  "status": "OK",
+  "id_col": 5
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f008d"
+  },
+  "volume": 7,
+  "titulo": "Citrus",
+  "author": "Saburouta",
+  "status": "OK",
+  "id_col": 5
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f008e"
+  },
+  "volume": 8,
+  "titulo": "Citrus",
+  "author": "Saburouta",
+  "status": "OK",
+  "id_col": 5
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f008f"
+  },
+  "volume": 9,
+  "titulo": "Citrus",
+  "author": "Saburouta",
+  "status": "OK",
+  "id_col": 5
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0090"
+  },
+  "volume": 10,
+  "titulo": "Citrus",
+  "author": "Saburouta",
+  "status": "OK",
+  "id_col": 5
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0091"
+  },
+  "volume": 1,
+  "titulo": "Soul Eater - Perfect Edition",
+  "author": "Atsushi Ohkubo",
+  "status": "OK",
+  "id_col": 6
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0092"
+  },
+  "volume": 2,
+  "titulo": "Soul Eater - Perfect Edition",
+  "author": "Atsushi Ohkubo",
+  "status": "OK",
+  "id_col": 6
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0093"
+  },
+  "volume": 3,
+  "titulo": "Soul Eater - Perfect Edition",
+  "author": "Atsushi Ohkubo",
+  "status": "OK",
+  "id_col": 6
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0094"
+  },
+  "volume": 4,
+  "titulo": "Soul Eater - Perfect Edition",
+  "author": "Atsushi Ohkubo",
+  "status": "OK",
+  "id_col": 6
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0095"
+  },
+  "volume": 5,
+  "titulo": "Soul Eater - Perfect Edition",
+  "author": "Atsushi Ohkubo",
+  "status": "OK",
+  "id_col": 6
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0096"
+  },
+  "volume": 6,
+  "titulo": "Soul Eater - Perfect Edition",
+  "author": "Atsushi Ohkubo",
+  "status": "OK",
+  "id_col": 6
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0097"
+  },
+  "volume": 7,
+  "titulo": "Soul Eater - Perfect Edition",
+  "author": "Atsushi Ohkubo",
+  "status": "FALTANDO",
+  "id_col": 6
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0098"
+  },
+  "volume": 8,
+  "titulo": "Soul Eater - Perfect Edition",
+  "author": "Atsushi Ohkubo",
+  "status": "FALTANDO",
+  "id_col": 6
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f0099"
+  },
+  "volume": 9,
+  "titulo": "Soul Eater - Perfect Edition",
+  "author": "Atsushi Ohkubo",
+  "status": "FALTANDO",
+  "id_col": 6
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f009a"
+  },
+  "volume": 10,
+  "titulo": "Soul Eater - Perfect Edition",
+  "author": "Atsushi Ohkubo",
+  "status": "FALTANDO",
+  "id_col": 6
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f009b"
+  },
+  "volume": 11,
+  "titulo": "Soul Eater - Perfect Edition",
+  "author": "Atsushi Ohkubo",
+  "status": "FALTANDO",
+  "id_col": 6
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f009c"
+  },
+  "volume": 12,
+  "titulo": "Soul Eater - Perfect Edition",
+  "author": "Atsushi Ohkubo",
+  "status": "FALTANDO",
+  "id_col": 6
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f009d"
+  },
+  "volume": 13,
+  "titulo": "Soul Eater - Perfect Edition",
+  "author": "Atsushi Ohkubo",
+  "status": "FALTANDO",
+  "id_col": 6
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f009e"
+  },
+  "volume": 14,
+  "titulo": "Soul Eater - Perfect Edition",
+  "author": "Atsushi Ohkubo",
+  "status": "FALTANDO",
+  "id_col": 6
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f009f"
+  },
+  "volume": 15,
+  "titulo": "Soul Eater - Perfect Edition",
+  "author": "Atsushi Ohkubo",
+  "status": "FALTANDO",
+  "id_col": 6
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00a0"
+  },
+  "volume": 16,
+  "titulo": "Soul Eater - Perfect Edition",
+  "author": "Atsushi Ohkubo",
+  "status": "FALTANDO",
+  "id_col": 6
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00a1"
+  },
+  "volume": 17,
+  "titulo": "Soul Eater - Perfect Edition",
+  "author": "Atsushi Ohkubo",
+  "status": "FALTANDO",
+  "id_col": 6
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00a2"
+  },
+  "volume": 1,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "FALTANDO",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00a3"
+  },
+  "volume": 2,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "FALTANDO",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00a4"
+  },
+  "volume": 3,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "OK",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00a5"
+  },
+  "volume": 4,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "OK",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00a6"
+  },
+  "volume": 5,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "OK",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00a7"
+  },
+  "volume": 6,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "OK",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00a8"
+  },
+  "volume": 7,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "OK",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00a9"
+  },
+  "volume": 8,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "OK",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00aa"
+  },
+  "volume": 9,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "OK",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00ab"
+  },
+  "volume": 10,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "OK",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00ac"
+  },
+  "volume": 11,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "OK",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00ad"
+  },
+  "volume": 12,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "OK",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00ae"
+  },
+  "volume": 13,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "OK",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00af"
+  },
+  "volume": 14,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "OK",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00b0"
+  },
+  "volume": 15,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "FALTANDO",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00b1"
+  },
+  "volume": 16,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "FALTANDO",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00b2"
+  },
+  "volume": 17,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "FALTANDO",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00b3"
+  },
+  "volume": 18,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "FALTANDO",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00b4"
+  },
+  "volume": 19,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "FALTANDO",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00b5"
+  },
+  "volume": 20,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "OK",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00b6"
+  },
+  "volume": 21,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "FALTANDO",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00b7"
+  },
+  "volume": 22,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "FALTANDO",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00b8"
+  },
+  "volume": 23,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "OK",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00b9"
+  },
+  "volume": 24,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "OK",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00ba"
+  },
+  "volume": 25,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "FALTANDO",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00bb"
+  },
+  "volume": 26,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "FALTANDO",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00bc"
+  },
+  "volume": 27,
+  "titulo": "Fullmetal Alchemist",
+  "author": "Hiromu Arakawa",
+  "status": "FALTANDO",
+  "id_col": 7
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00bd"
+  },
+  "volume": 1,
+  "titulo": "Jojos Bizarre Adventures - Part 1 - Phantom Blood",
+  "author": "Hirohiko Araki",
+  "status": "OK",
+  "id_col": 8
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00be"
+  },
+  "volume": 2,
+  "titulo": "Jojos Bizarre Adventures - Part 1 - Phantom Blood",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 8
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00bf"
+  },
+  "volume": 3,
+  "titulo": "Jojos Bizarre Adventures - Part 1 - Phantom Blood",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 8
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00c2"
+  },
+  "volume": 1,
+  "titulo": "Jojos Bizarre Adventures - Part 2 - Battle Tendency",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 9
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00c3"
+  },
+  "volume": 2,
+  "titulo": "Jojos Bizarre Adventures - Part 2 - Battle Tendency",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 9
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00c4"
+  },
+  "volume": 3,
+  "titulo": "Jojos Bizarre Adventures - Part 2 - Battle Tendency",
+  "author": "Hirohiko Araki",
+  "status": "OK",
+  "id_col": 9
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00c5"
+  },
+  "volume": 4,
+  "titulo": "Jojos Bizarre Adventures - Part 2 - Battle Tendency",
+  "author": "Hirohiko Araki",
+  "status": "OK",
+  "id_col": 9
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00c6"
+  },
+  "volume": 5,
+  "titulo": "Jojos Bizarre Adventures - Part 2 - Battle Tendency",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 9
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00c7"
+  },
+  "volume": 6,
+  "titulo": "Jojos Bizarre Adventures - Part 2 - Battle Tendency",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 9
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00c8"
+  },
+  "volume": 7,
+  "titulo": "Jojos Bizarre Adventures - Part 2 - Battle Tendency",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 9
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00c9"
+  },
+  "volume": 1,
+  "titulo": "Jojos Bizarre Adventures - Part 3 - Stardust Crusaders",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 10
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00ca"
+  },
+  "volume": 2,
+  "titulo": "Jojos Bizarre Adventures - Part 3 - Stardust Crusaders",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 10
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00cb"
+  },
+  "volume": 3,
+  "titulo": "Jojos Bizarre Adventures - Part 3 - Stardust Crusaders",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 10
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00cc"
+  },
+  "volume": 4,
+  "titulo": "Jojos Bizarre Adventures - Part 3 - Stardust Crusaders",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 10
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00cd"
+  },
+  "volume": 5,
+  "titulo": "Jojos Bizarre Adventures - Part 3 - Stardust Crusaders",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 10
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00ce"
+  },
+  "volume": 6,
+  "titulo": "Jojos Bizarre Adventures - Part 3 - Stardust Crusaders",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 10
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00cf"
+  },
+  "volume": 7,
+  "titulo": "Jojos Bizarre Adventures - Part 3 - Stardust Crusaders",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 10
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00d0"
+  },
+  "volume": 8,
+  "titulo": "Jojos Bizarre Adventures - Part 3 - Stardust Crusaders",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 10
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00d1"
+  },
+  "volume": 9,
+  "titulo": "Jojos Bizarre Adventures - Part 3 - Stardust Crusaders",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 10
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00d2"
+  },
+  "volume": 10,
+  "titulo": "Jojos Bizarre Adventures - Part 3 - Stardust Crusaders",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 10
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00d3"
+  },
+  "volume": 1,
+  "titulo": "Jojos Bizarre Adventures - Part 4 - Diamond Is Unbreakable",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 11
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00d4"
+  },
+  "volume": 2,
+  "titulo": "Jojos Bizarre Adventures - Part 4 - Diamond Is Unbreakable",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 11
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00d5"
+  },
+  "volume": 3,
+  "titulo": "Jojos Bizarre Adventures - Part 4 - Diamond Is Unbreakable",
+  "author": "Hirohiko Araki",
+  "status": "OK",
+  "id_col": 11
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00d6"
+  },
+  "volume": 4,
+  "titulo": "Jojos Bizarre Adventures - Part 4 - Diamond Is Unbreakable",
+  "author": "Hirohiko Araki",
+  "status": "OK",
+  "id_col": 11
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00d7"
+  },
+  "volume": 5,
+  "titulo": "Jojos Bizarre Adventures - Part 4 - Diamond Is Unbreakable",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 11
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00d8"
+  },
+  "volume": 6,
+  "titulo": "Jojos Bizarre Adventures - Part 4 - Diamond Is Unbreakable",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 11
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00d9"
+  },
+  "volume": 7,
+  "titulo": "Jojos Bizarre Adventures - Part 4 - Diamond Is Unbreakable",
+  "author": "Hirohiko Araki",
+  "status": "OK",
+  "id_col": 11
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00da"
+  },
+  "volume": 8,
+  "titulo": "Jojos Bizarre Adventures - Part 4 - Diamond Is Unbreakable",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 11
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00db"
+  },
+  "volume": 9,
+  "titulo": "Jojos Bizarre Adventures - Part 4 - Diamond Is Unbreakable",
+  "author": "Hirohiko Araki",
+  "status": "OK",
+  "id_col": 11
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00dc"
+  },
+  "volume": 10,
+  "titulo": "Jojos Bizarre Adventures - Part 4 - Diamond Is Unbreakable",
+  "author": "Hirohiko Araki",
+  "status": "OK",
+  "id_col": 11
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00dd"
+  },
+  "volume": 11,
+  "titulo": "Jojos Bizarre Adventures - Part 4 - Diamond Is Unbreakable",
+  "author": "Hirohiko Araki",
+  "status": "OK",
+  "id_col": 11
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00de"
+  },
+  "volume": 12,
+  "titulo": "Jojos Bizarre Adventures - Part 4 - Diamond Is Unbreakable",
+  "author": "Hirohiko Araki",
+  "status": "OK",
+  "id_col": 11
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00df"
+  },
+  "volume": 1,
+  "titulo": "Jojos Bizarre Adventures - Part 5 - Golden Wind",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 12
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00e0"
+  },
+  "volume": 2,
+  "titulo": "Jojos Bizarre Adventures - Part 5 - Golden Wind",
+  "author": "Hirohiko Araki",
+  "status": "OK",
+  "id_col": 12
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00e1"
+  },
+  "volume": 3,
+  "titulo": "Jojos Bizarre Adventures - Part 5 - Golden Wind",
+  "author": "Hirohiko Araki",
+  "status": "OK",
+  "id_col": 12
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00e2"
+  },
+  "volume": 4,
+  "titulo": "Jojos Bizarre Adventures - Part 5 - Golden Wind",
+  "author": "Hirohiko Araki",
+  "status": "OK",
+  "id_col": 12
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00e3"
+  },
+  "volume": 5,
+  "titulo": "Jojos Bizarre Adventures - Part 5 - Golden Wind",
+  "author": "Hirohiko Araki",
+  "status": "OK",
+  "id_col": 12
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00e4"
+  },
+  "volume": 6,
+  "titulo": "Jojos Bizarre Adventures - Part 5 - Golden Wind",
+  "author": "Hirohiko Araki",
+  "status": "OK",
+  "id_col": 12
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00e5"
+  },
+  "volume": 7,
+  "titulo": "Jojos Bizarre Adventures - Part 5 - Golden Wind",
+  "author": "Hirohiko Araki",
+  "status": "OK",
+  "id_col": 12
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00e6"
+  },
+  "volume": 8,
+  "titulo": "Jojos Bizarre Adventures - Part 5 - Golden Wind",
+  "author": "Hirohiko Araki",
+  "status": "OK",
+  "id_col": 12
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00e7"
+  },
+  "volume": 9,
+  "titulo": "Jojos Bizarre Adventures - Part 5 - Golden Wind",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 12
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00e8"
+  },
+  "volume": 10,
+  "titulo": "Jojos Bizarre Adventures - Part 5 - Golden Wind",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 12
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00e9"
+  },
+  "volume": 1,
+  "titulo": "Jojos Bizarre Adventures - Part 6 - Stone Ocean",
+  "author": "Hirohiko Araki",
+  "status": "OK",
+  "id_col": 13
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00ea"
+  },
+  "volume": 2,
+  "titulo": "Jojos Bizarre Adventures - Part 6 - Stone Ocean",
+  "author": "Hirohiko Araki",
+  "status": "OK",
+  "id_col": 13
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00eb"
+  },
+  "volume": 3,
+  "titulo": "Jojos Bizarre Adventures - Part 6 - Stone Ocean",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 13
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00ec"
+  },
+  "volume": 4,
+  "titulo": "Jojos Bizarre Adventures - Part 6 - Stone Ocean",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 13
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00ed"
+  },
+  "volume": 5,
+  "titulo": "Jojos Bizarre Adventures - Part 6 - Stone Ocean",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 13
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00ee"
+  },
+  "volume": 6,
+  "titulo": "Jojos Bizarre Adventures - Part 6 - Stone Ocean",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 13
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00ef"
+  },
+  "volume": 7,
+  "titulo": "Jojos Bizarre Adventures - Part 6 - Stone Ocean",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 13
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00f0"
+  },
+  "volume": 8,
+  "titulo": "Jojos Bizarre Adventures - Part 6 - Stone Ocean",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 13
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00f1"
+  },
+  "volume": 9,
+  "titulo": "Jojos Bizarre Adventures - Part 6 - Stone Ocean",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 13
+},
+{
+  "_id": {
+    "$oid": "663c1fd69afc67b0b49f00f2"
+  },
+  "volume": 10,
+  "titulo": "Jojos Bizarre Adventures - Part 6 - Stone Ocean",
+  "author": "Hirohiko Araki",
+  "status": "FALTANDO",
+  "id_col": 13
+},
+{
+  "_id": {
+    "$oid": "6647e95073583f3450b14dc6"
+  },
+  "titulo": "Mob Psycho 100",
+  "author": "ONE",
+  "status": "OK",
+  "volume": 1,
+  "id_col": 14
+},
+{
+  "_id": {
+    "$oid": "6647e95073583f3450b14dc7"
+  },
+  "titulo": "Mob Psycho 100",
+  "author": "ONE",
+  "status": "FALTANDO",
+  "volume": 2,
+  "id_col": 14
+},
+{
+  "_id": {
+    "$oid": "6647e95073583f3450b14dc8"
+  },
+  "titulo": "Mob Psycho 100",
+  "author": "ONE",
+  "status": "FALTANDO",
+  "volume": 3,
+  "id_col": 14
+},
+{
+  "_id": {
+    "$oid": "6647e95073583f3450b14dc9"
+  },
+  "titulo": "Mob Psycho 100",
+  "author": "ONE",
+  "status": "FALTANDO",
+  "volume": 4,
+  "id_col": 14
+},
+{
+  "_id": {
+    "$oid": "6647e95073583f3450b14dca"
+  },
+  "titulo": "Mob Psycho 100",
+  "author": "ONE",
+  "status": "FALTANDO",
+  "volume": 5,
+  "id_col": 14
+},
+{
+  "_id": {
+    "$oid": "6647e95073583f3450b14dcb"
+  },
+  "titulo": "Mob Psycho 100",
+  "author": "ONE",
+  "status": "FALTANDO",
+  "volume": 6,
+  "id_col": 14
+},
+{
+  "_id": {
+    "$oid": "6647e95073583f3450b14dcc"
+  },
+  "titulo": "Mob Psycho 100",
+  "author": "ONE",
+  "status": "FALTANDO",
+  "volume": 7,
+  "id_col": 14
+},
+{
+  "_id": {
+    "$oid": "6647e95073583f3450b14dcd"
+  },
+  "titulo": "Mob Psycho 100",
+  "author": "ONE",
+  "status": "FALTANDO",
+  "volume": 8,
+  "id_col": 14
+},
+{
+  "_id": {
+    "$oid": "664fcf32bfd6cd3de424c032"
+  },
+  "volume": 1,
+  "titulo": "Demon Slayer",
+  "author": "Koyoharu Gotouge",
+  "status": "OK",
+  "id_col": 1
+}]

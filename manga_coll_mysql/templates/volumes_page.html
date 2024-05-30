@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mangá Manager</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="static/style.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 main-titulo">Mangá Manager</span>
+        </div>
+    </nav>
+
+    <ul class="nav justify-content-center nav-style">
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="{{ url_for('index') }}">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('volumes_page') }}">Volumes</a>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="div-style">
+            <h3 class="sub-titulos">Volumes</h3>
+            
+            <div class="mt-5">
+                <div class="row">
+                    <div class="col">
+                        <form class="row mb-3 ">
+                            <div class="col-9">
+                                <input type="text" class="form-control mb-3" id="pesquisarManga" name="pesquisar"
+                                    placeholder="Pesquisar Mangá">
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-all mb-3">Pesquisar</button>
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn btn-all mb-3" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFiltros" aria-expanded="false"
+                                    aria-controls="collapseFiltros">
+                                    Mostrar Filtro
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                        <div class="alert alert-{{ category }} d-flex justify-content-between align-items-center fade show" role="alert">
+                            <span>{{ message }}</span>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+
+                <div class="row">
+                    <div class="col">
+                        <div class="collapse" id="collapseFiltros">
+                            <div class="card card-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="autor" class="form-label">Autor:</label>
+                                        <select class="form-select mb-2" id="autor" name="autor">
+                                            <option value="autor1">Autor 1</option>
+                                            <option value="autor2">Autor 2</option>
+                                            <option value="autor3">Autor 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="status" class="form-label">Status:</label>
+                                        <select class="form-select mb-2" id="status" name="status">
+                                            <option value="ok-status">OK</option>
+                                            <option value="comprado-status">COMPRADO</option>
+                                            <option value="faltando-status">FALTANDO</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <table class="table table-hover table-sm table-resumo mt-5" id="table-vol">
+                <thead>
+                    <tr>
+                        <th scope="col">Volume</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody class="table-group-divider">
+                    {% for entry in vol_data %}
+                    <tr data-id="{{ entry._id }}">
+                        <td>{{ entry.volume }}</td>
+                        <td>{{ entry.titulo }}</td>
+                        <td>{{ entry.author }}</td>
+                        <td>{{ entry.status }}</td>
+                        <td>
+                            <a class="update-btn" data-bs-toggle="modal" data-bs-target="#updateModal"><span
+                                    class="material-symbols-outlined">edit</span></a>
+                                    <a class="delete-btn" href="javascript:void(0);" onclick="deleteEntry('{{ entry._id }}')">
+                                        <span class="material-symbols-outlined">delete</span>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <div class="modal fade" id="updateModal">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="sub-sub-titulos">Editar Volume</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div><!--fim header modal-->
+                        <div class="modal-body">
+                            <form action="/update" method="post" id="edit-form">
+                                <input type="hidden" name="_id" id="edit-id" value="">
+                                <div class="mb-3">
+                                    <label for="edit-volume" class="form-label">Volume</label>
+                                    <input type="text" class="form-control" id="edit-volume" name="volume">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="edit-titulo" class="form-label">Título</label>
+                                    <input type="text" class="form-control" id="edit-titulo" name="titulo">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="edit-author" class="form-label">Autor</label>
+                                    <input type="text" class="form-control" id="edit-author" name="author">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="edit-status" class="form-label">Status</label>
+                                    <select class="form-select" id="edit-status" name="status">
+                                        <option value="OK">OK</option>
+                                        <option value="COMPRADO">COMPRADO</option>
+                                        <option value="FALTANDO">FALTANDO</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-all">Salvar</button>
+                            </form>
+                        </div>
+                    </div><!--fim modal content-->
+                </div><!--fim modal-dialog -->
+            </div><!--fim modal-->
+
+            <div class="div-pag" id="pag">
+                <div class="pag-btn-group">
+                    <button id="back">&#60;</button>
+                    <span id="pagina"></span>
+                    <button id="next">&#62;</button>
+                </div>
+            </div>
+        </div><!--fim div-style-->
+
+    </div><!--fim container-->
+
+    <script>
+        document.getElementById('pesquisarManga').addEventListener('input', function () {
+            var filter = this.value.toLowerCase();
+            var rows = document.querySelectorAll('#table-vol tbody tr');
+
+            rows.forEach(function (row) {
+                var titulo = row.cells[1].textContent.toLowerCase();
+                if (titulo.indexOf(filter) > -1) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    <script>
+        function deleteEntry(entryId) {
+            if (confirm('Tem certeza de que deseja deletar este volume?')) {
+                fetch(`/delete_vol/${entryId}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }).then(response => {
+                    if (response.ok) {
+                        alert('Volume deletado com sucesso');
+                        location.reload();
+                    } else {
+                        alert('Erro ao deletar volume');
+                    }
+                }).catch(error => {
+                    console.error('Erro:', error);
+                    alert('Erro ao deletar volume');
+                });
+            }
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const updateButtons = document.querySelectorAll('.update-btn');
+            updateButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    const row = event.target.closest('tr');
+                    const volume = row.cells[0].textContent;
+                    const titulo = row.cells[1].textContent;
+                    const author = row.cells[2].textContent;
+                    const status = row.cells[3].textContent;
+                    const volume_id = row.dataset.id; 
+
+                    document.getElementById('edit-volume').value = volume;
+                    document.getElementById('edit-titulo').value = titulo;
+                    document.getElementById('edit-author').value = author;
+                    document.getElementById('edit-status').value = status;
+                    document.getElementById('edit-id').value = volume_id;
+                });
+            });
+        });
+    </script>  
+    <script>
+        const lines = 20;
+        let current = 1;
+
+        const table = document.getElementById('table-vol');
+        const pag = document.getElementById('pag');
+        const back = document.getElementById('back');
+        const next = document.getElementById('next');
+        const pageSpan = document.getElementById('pagina');
+
+        function loadData() {
+            const linhas = table.rows;
+            const allLines = linhas.length - 1;
+            const totalPages = Math.ceil(allLines / lines);
+
+            // Esconde todas as linhas
+            for (let i = 1; i < linhas.length; i++) {
+                linhas[i].style.display = 'none';
+            }
+
+            const ini = (current - 1) * lines + 1;
+            let end = ini + lines - 1;
+            if (end > allLines) {
+                end = allLines;
+            }
+
+            for (let i = ini; i <= end; i++) {
+                linhas[i].style.display = '';
+            }
+
+            pageSpan.innerText = `Página ${current} de ${totalPages}`;
+        }
+
+        function goToPage(pagina) {
+            current = pagina;
+            loadData();
+        }
+
+        back.addEventListener('click', () => {
+            if (current > 1) {
+                goToPage(current - 1);
+            }
+        });
+
+        next.addEventListener('click', () => {
+            const allLines = table.rows.length - 1;
+            const totalPages = Math.ceil(allLines / lines);
+
+            if (current < totalPages) {
+                goToPage(current + 1);
+            }
+        });
+
+        loadData();
+    </script>
+</body>
+<footer>
+    <span>@baleralarissa<br></span>
+    
+        <a href="https://github.com/baleralarissa">
+            <span class="material-symbols-outlined">
+                account_tree
+            </span>
+        </a>
+</footer>
+
+</html>

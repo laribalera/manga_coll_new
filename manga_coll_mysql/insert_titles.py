@@ -1,12 +1,12 @@
 import json
 import mysql.connector
 
-def read_json_file(file_path):
+def read_json(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         return json.load(file)
 
 # insert dados na tabela manga_collection.all_titles
-def insert_data_into_db(data, conn):
+def insert_data(data, conn):
     cursor = conn.cursor()
     for item in data:
         titulo = item.get('titulo')
@@ -22,7 +22,7 @@ def insert_data_into_db(data, conn):
     conn.commit()
     cursor.close()
 
-def connect_to_db():
+def connect_db():
     try:
         conn = mysql.connector.connect(
             host="localhost",
@@ -37,10 +37,10 @@ def connect_to_db():
 
 json_file_path = 'manga_collection.all_titles.json'
 
-data = read_json_file(json_file_path)
+data = read_json(json_file_path)
 
-conn = connect_to_db()
+conn = connect_db()
 
 if conn:
-    insert_data_into_db(data, conn)
+    insert_data(data, conn)
     conn.close()
