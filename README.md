@@ -97,5 +97,7 @@ Este repositório contém uma aplicação em construção para gerenciamento de 
 
 - @baleralarissa
 
+## Homepage Preview
 
+![pj1](https://github.com/baleralarissa/manga_coll_new/assets/28411475/ce604d27-6c67-49ca-953b-b47cf1ceeb9b)
 
